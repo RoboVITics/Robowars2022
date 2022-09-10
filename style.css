@@ -1,8 +1,77 @@
 body {
   overflow-y: scroll;
   overflow-x: hidden;
+<<<<<<< Updated upstream
   width: 100vw;
   background-color: #0d091d;
+=======
+  background-color: #0d091d;
+}
+.navbar {
+  position: absolute;
+  width:fit-content;
+  height:fit-content;
+  background: #0d091d;
+  /* glow on nav */
+
+  box-shadow: -0.5rem .5rem 2.1875rem rgba(147, 126, 230, 0.1),
+    .5rem -0.5rem 1.875rem rgba(147, 126, 230, 0.1),
+    -0.5rem -0.5rem 1.875rem rgba(169, 144, 255, 0.1),
+    .5rem .5rem 2.1875rem rgba(147, 126, 230, 0.2),
+    inset .125rem .125rem .375rem rgba(169, 144, 255, 0.15),
+    inset -0.125rem -0.125rem .5rem rgba(147, 126, 230, 0.2);
+}
+.navbar .logo {
+        margin-top: .625rem;
+        margin-left: .3125rem;
+        margin-right: .3125rem;
+        margin-bottom: .3125rem;
+}
+.navbar ul {
+    
+    left: 13.75rem;
+    
+   
+    box-shadow: -0.5rem .5rem 2.1875rem rgba(147, 126, 230, 0.1),
+    .5rem -0.5rem 1.875rem rgba(147, 126, 230, 0.1),
+    -0.5rem -0.5rem 1.875rem rgba(169, 144, 255, 0.1),
+    .5rem .5rem 2.1875rem rgba(147, 126, 230, 0.2),
+    inset .125rem .125rem .375rem rgba(169, 144, 255, 0.15),
+    inset -0.125rem -0.125rem .5rem rgba(147, 126, 230, 0.2); 
+  text-align: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #0d091d;
+  position: fixed;
+  top: 0;
+  width: 70%;
+}
+
+.navbar li {
+  display: inline-block;
+}
+
+.navbar li a {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.75rem;
+  line-height: 2.0625rem;
+
+  align-self: center;
+  display: block;
+  color: white;
+  text-align: center;
+   
+  padding: 14px 40px;
+  text-decoration: none;
+}
+
+.navbar li a:hover:not(.active) {
+  background-color: #111;
+>>>>>>> Stashed changes
 }
 
 .header {
@@ -14,7 +83,11 @@ body {
 .bottomLayer {
   width: 100%;
   height: 500vh;
+<<<<<<< Updated upstream
   position: absolute;
+=======
+  position: relative;
+>>>>>>> Stashed changes
   z-index: 1;
 }
 
@@ -98,6 +171,7 @@ body {
 }
 
 .layerFive {
+<<<<<<< Updated upstream
   height: 150vh;
   width: 100%;
   z-index: 1;
@@ -200,30 +274,30 @@ body {
   width: 40%;
   box-sizing: border-box;
   background: #784afa;
-  border: 3px solid #784afa;
-  border-radius: 20px;
+  border: .1875rem solid #784afa;
+  border-radius: 1.25rem;
   font-weight: 600;
-  font-size: 20px;
-  line-height: 28px;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
   text-align: center;
   color: #ffffff;
-  text-shadow: 1px 4px 4px rgba(34, 72, 116, 0.44);
+  text-shadow: .0625rem .25rem .25rem rgba(34, 72, 116, 0.44);
 }
 
 .rulebookButton {
   height: 80%;
   width: 40%;
   background-color: transparent;
-  border-radius: 20px;
-  border: 3px;
+  border-radius: 1.25rem;
+  border: .1875rem;
   border-style: solid;
   border-color: #784afa;
   font-weight: 600;
-  font-size: 20px;
-  line-height: 28px;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
   text-align: center;
   color: #ffffff;
-  text-shadow: 1px 4px 4px rgba(34, 72, 116, 0.44);
+  text-shadow: .0625rem .25rem .25rem rgba(34, 72, 116, 0.44);
 }
 
 .robovlogo {
@@ -263,19 +337,19 @@ body {
 }
 
 .divider {
-  height: 2px;
+  height: .125rem;
   width: 70%;
   background-color: aliceblue;
   opacity: 0.7;
   align-self: center;
-  border: 3px solid #151030;
+  border: .1875rem solid #151030;
   /* robo1 */
-  box-shadow: -8px 8px 35px rgba(147, 126, 230, 0.1),
-    8px -8px 30px rgba(147, 126, 230, 0.1),
-    -8px -8px 30px rgba(169, 144, 255, 0.1),
-    8px 8px 35px rgba(147, 126, 230, 0.2),
-    inset 2px 2px 6px rgba(169, 144, 255, 0.15),
-    inset -2px -2px 8px rgba(147, 126, 230, 0.2);
+  box-shadow: -0.5rem .5rem 2.1875rem rgba(147, 126, 230, 0.1),
+    .5rem -0.5rem 1.875rem rgba(147, 126, 230, 0.1),
+    -0.5rem -0.5rem 1.875rem rgba(169, 144, 255, 0.1),
+    .5rem .5rem 2.1875rem rgba(147, 126, 230, 0.2),
+    inset .125rem .125rem .375rem rgba(169, 144, 255, 0.15),
+    inset -0.125rem -0.125rem .5rem rgba(147, 126, 230, 0.2);
   transform: rotate(-0.12deg);
 }
 
@@ -293,16 +367,16 @@ body {
   font-family: "Archivo";
   font-style: normal;
   font-weight: 600;
-  font-size: 40px;
-  line-height: 54px;
+  font-size: 2.5rem;
+  line-height: 3.375rem;
   text-align: center;
   color: #d2b6ff;
-  text-shadow: 4px 4px 10px rgba(120, 74, 250, 0.4),
-    -4px -4px 10px rgba(120, 74, 250, 0.3);
+  text-shadow: .25rem .25rem .625rem rgba(120, 74, 250, 0.4),
+    -0.25rem -0.25rem .625rem rgba(120, 74, 250, 0.3);
 }
 
 .abouttopHeading p {
-    margin: 0px;
+    margin: 0rem;
 }
 
 .videoDiv {
@@ -321,10 +395,19 @@ body {
 .abouttextDivider {
     height: 1%;
     width: 100%;
-    border: 3px solid #AB93D2;
+    border: .1875rem solid #AB93D2;
 /* purple neon */
-box-shadow: -5px 5px 20px rgba(209, 180, 243, 0.07), 5px -5px 20px rgba(209, 180, 243, 0.07), -5px -5px 20px rgba(213, 184, 247, 0.3), 5px 5px 20px rgba(209, 180, 243, 0.3), inset 1px 1px 4px rgba(213, 184, 247, 0.15), inset -1px -1px 2px rgba(209, 180, 243, 0.2);
+box-shadow: -0.3125rem .3125rem 1.25rem rgba(209, 180, 243, 0.07), .3125rem -0.3125rem 1.25rem rgba(209, 180, 243, 0.07), -0.3125rem -0.3125rem 1.25rem rgba(213, 184, 247, 0.3), .3125rem .3125rem 1.25rem rgba(209, 180, 243, 0.3), inset .0625rem .0625rem .25rem rgba(213, 184, 247, 0.15), inset -0.0625rem -0.0625rem .125rem rgba(209, 180, 243, 0.2);
 }
+=======
+  height: 230vh;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+>>>>>>> Stashed changes
 /* .basics .background {
     background-color: aliceblue;
     height: 100%;
