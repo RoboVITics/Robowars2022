@@ -24,6 +24,7 @@ body {
         margin-left: .3125rem;
         margin-right: .3125rem;
         margin-bottom: .3125rem;
+        position: fixed;
 }
 .navbar ul {
     
