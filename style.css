@@ -308,14 +308,30 @@ body {
 .videoDiv {
     height: 70%;
     width: 80%;
-    background-color: red;
-
 }
 
 .buttonDivAbout {
     height: 10%;
     width: 80%;
-    background-color: #784afa;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.robowarsAbout {
+    height: 80%;
+    width: 40%;
+    background: rgba(120, 74, 250, 0.4);
+border: 3px solid #784AFA;
+border-radius: 10px;
+}
+
+.roboviticsAbout {
+    height: 80%;
+    width: 40%;
+    background: rgba(158, 135, 251, 0.9);
+border: 3px solid #9E87FB;
+border-radius: 10px;
 }
 
 .abouttextDivider {
