@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Gilroy-Light;
+    src: url(fonts/Gilroy-Light.otf) format("opentype");
+}
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
 body {
   overflow-y: scroll;
   overflow-x: hidden;
@@ -53,7 +58,7 @@ body {
 }
 
 .navbar li a {
-  font-family: "Gilroy";
+  font-family: 'Gilroy-Light';
   font-style: normal;
   font-weight: 500;
   font-size: 1.75rem;
