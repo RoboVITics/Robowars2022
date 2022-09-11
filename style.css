@@ -10,6 +10,62 @@ body {
   background-color: #0d091d;
   background-color: #0d091d;
 }
+
+
+
+
+.publicationPage{
+    margin: 0%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 2px;
+    overflow: none;
+}
+
+.row{
+    height: 100vh;
+}
+
+.col{
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2,1fr);
+    
+ 
+
+}
+
+#hi{
+    object-fit: cover;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+}
+#yo{
+  object-fit: cover;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+}
+#qi{
+  object-fit: cover;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+}
+#ai{
+  object-fit: cover;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+}
+#bi{
+  object-fit: cover;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+}
 .navbar {
   position: absolute;
   width:fit-content;
@@ -456,7 +512,7 @@ box-shadow: -0.3125rem .3125rem 1.25rem rgba(209, 180, 243, 0.07), .3125rem -0.3
 }
 
 .publicationPage {
-  height: 200vh;
+  height: 100vh;
   width: 100%;
   background-color: white;
 }
