@@ -2,7 +2,15 @@
   font-family: Gilroy-Light;
   src: url(fonts/Gilroy-Light.otf) format("opentype");
 }
-@import url("https://fonts.googleapis.com/css?family=Quicksand&display=swap");
+
+@font-face {
+    font-family: Montserrat;
+    src: url(fonts/Montserrat-VariableFont_wght.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: Archivo;
+    src: url(fonts/Archivo-VariableFont_wdth\,wght.ttf) format("truetype");
+  }
 body {
   overflow-y: scroll;
   overflow-x: hidden;
@@ -457,19 +465,182 @@ body {
 .judgesPage {
   height: 100vh;
   width: 100%;
-  background-color: palegreen;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
 }
+
+.judgehead{
+  display: flex;
+  flex-direction: column;
+}
+
+.judgebox{
+  margin-top: 15vh;
+  display: grid;
+  grid-template-rows: 50vh;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+}
+
+.judge{
+  display: grid;
+  grid-template-rows: 100vh;
+  grid-template-columns: 1fr;
+  border: 5px solid #784AFA;
+  width: 30vh;
+  height: 30vh;
+  border-radius: 30vh;
+  padding: 10px;
+  margin: 0 15vh;
+  justify-items: center;
+}
+
+.info{
+  background-color: #9E87FB;
+  display: grid;
+  width: 17vh;
+  height: 17vh;
+  border-radius: 17vh;
+  align-items: center;
+  color: white;
+  padding: 6vh;
+  border: 1px solid white;
+  font-family: 'Gilroy-Light';
+  font-size: 2.5vh;
+  justify-content: space-evenly;
+}
+
+.judge img{
+  width: 29vh;
+  height: 29vh;
+  border-radius: 29vh;
+  padding: 0;
+  
+}
+
+.judge img:hover{
+  transition: 1.2s ease-in-out;
+  display: none;
+}
+
+
 
 .publicationPage {
   height: 200vh;
   width: 100%;
   background-color: white;
 }
+/*FAQ STARTS*/
 .faqpage {
   height: 120vh;
   width: 100%;
-  background-color: red;
 }
+#header-faq{
+  align-items: center;
+}
+#header-faq h1{
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 600;
+  font-size:50px;
+  text-align: center;
+  color: #D2B6FF;
+  text-shadow: 4px 4px 10px rgba(120, 74, 250, 0.4), -4px -4px 10px rgba(120, 74, 250, 0.3);
+
+}
+#faq-line{
+  margin-top: -20px;
+  width: 250px;
+  height: 0px;
+  border: 1px solid #AB93D2;
+  box-shadow: -5px 5px 20px rgba(209, 180, 243, 0.07), 5px -5px 20px rgba(209, 180, 243, 0.07), -5px -5px 20px rgba(213, 184, 247, 0.3), 5px 5px 20px rgba(209, 180, 243, 0.3), inset 1px 1px 4px rgba(213, 184, 247, 0.15), inset -1px -1px 2px rgba(209, 180, 243, 0.2);
+}
+#box{
+  justify-items: center;
+  display: grid;
+  gap: 10px;
+  margin: 10px;
+}
+#row1,#row2,#row3,#row5,#row6,#row7{
+  margin: 30px auto;
+  width: 280px;
+  height: 280px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+  transition: 0.4s;
+  background-color: #ab93d2 ;
+  border: solid 2px #5a38bc;
+  color: #151030;
+}
+#row1{
+  grid-column: 1;
+  grid-row: 1;
+}
+#content {
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+#row2{
+  grid-column: 2;
+  grid-row: 1;
+}
+#row3{
+  grid-column: 3;
+  grid-row: 1;
+}
+#row5{
+  grid-column: 1;
+  grid-row: 2;
+}
+#row6{
+  grid-column: 2;
+  grid-row: 2;
+}
+#row7{
+  grid-column: 3;
+  grid-row: 2;
+}
+#row1:hover #content {
+  transform: rotateY( 180deg ) ;
+  transition: transform 0.5s;
+}
+#row2:hover #content {
+  transform: rotateY( 180deg ) ;
+  transition: transform 0.5s;
+}
+#row3:hover #content {
+  transform: rotateY( 180deg ) ;
+  transition: transform 0.5s;
+}
+#row5:hover #content {
+  transform: rotateY( 180deg ) ;
+  transition: transform 0.5s;
+}
+#row6:hover #content {
+  transform: rotateY( 180deg ) ;
+  transition: transform 0.5s;
+}
+#row7:hover #content {
+  transform: rotateY( 180deg ) ;
+  transition: transform 0.5s;
+}
+#front,
+#back {
+  color: #03446A;
+  text-align: center;
+  font-size: 25px;
+  border-radius: 5px;
+  backface-visibility: hidden;
+}
+
+#back {
+  transform: rotateY( 180deg );
+}
+/* FAQ ENDS */
+
 .contactPage {
   height: 70vh;
   width: 100%;
@@ -518,6 +689,107 @@ body {
   align-items: center;
   justify-content: flex-start;
 }
+
+  color: #d2b6ff;
+
+  text-shadow: 4px 4px 10px rgba(120, 74, 250, 0.4),
+    -4px -4px 10px rgba(120, 74, 250, 0.3);
+}
+.contactPage .header-contactus .line {
+    
+  margin-top: -20px;
+  width: 250px;
+  height: 0px;
+
+  border: 1px solid #ab93d2;
+  /* purple neon */
+
+  box-shadow: -5px 5px 20px rgba(209, 180, 243, 0.07),
+    5px -5px 20px rgba(209, 180, 243, 0.07),
+    -5px -5px 20px rgba(213, 184, 247, 0.3),
+    5px 5px 20px rgba(209, 180, 243, 0.3),
+    inset 1px 1px 4px rgba(213, 184, 247, 0.15),
+    inset -1px -1px 2px rgba(209, 180, 243, 0.2);
+  /* transform: rotate(-0.2deg); */
+}
+.contactPage .pageBody {
+    margin-top: 3.5%;
+    display: flex;
+    
+    
+    justify-content:flex-start;
+}
+.contactPage .pageBody .roboLogo {
+    margin-left: 5%;
+        display: flex;
+}
+.contactPage .pageBody .roboLogo mainLogo{
+    width: 25%;
+    height: auto;
+    
+}
+.contactPage .pageBody .roboLogo  h1{
+
+margin-top: 15%;
+color: white;    
+font-family: 'Montserrat';
+font-style: normal;
+margin-left: 7%;
+font-size: 60px;
+}
+.contactPage .pageBody .roboLogo ul{
+    list-style-type: none;
+    White-space: nowrap;
+    margin-left: 0px;
+}
+.contactPage .pageBody .roboLogo li{
+    margin: 2.5%;
+    display:inline;
+    
+}
+.contactPage .pageBody .Contacts {
+   
+    display:block;
+}
+.contactPage .pageBody .Contacts .email{
+    White-space: nowrap;
+    margin-left: 50%;
+    color: white;
+    
+}
+.contactPage .pageBody .Contacts .email p{
+    font-family: 'Gilroy-Light';
+font-style: normal;
+font-weight: 300;
+font-size: 30px;
+line-height: 35px;
+text-align: center;
+
+color: #FFFFFF;
+}
+.contactPage .pageBody .Contacts .clubContacts {
+    display: flex;
+    margin-left: 30%;
+}
+.contactPage .pageBody .Contacts .clubContacts ul{
+    text-align: center;
+   
+    list-style-type: none;
+    White-space: nowrap;
+    color: white;
+    
+}
+.contactPage .pageBody .Contacts .clubContacts li{
+    
+font-family: 'Gilroy-Light';
+font-style: normal;
+font-weight: 300;
+font-size: 24px;
+line-height: 28px;
+text-align: center;
+margin-top: -20px;
+width: 250px;
+height: 0px;
 
 .timelineTopHeading p {
   margin: 0px;
@@ -620,3 +892,10 @@ body {
   position: relative;
   top: -15%;
 }
+
+border: 1px solid #AB93D2;
+/* purple neon */
+
+box-shadow: -5px 5px 20px rgba(209, 180, 243, 0.07), 5px -5px 20px rgba(209, 180, 243, 0.07), -5px -5px 20px rgba(213, 184, 247, 0.3), 5px 5px 20px rgba(209, 180, 243, 0.3), inset 1px 1px 4px rgba(213, 184, 247, 0.15), inset -1px -1px 2px rgba(209, 180, 243, 0.2);
+/* transform: rotate(-0.2deg); */
+    }
