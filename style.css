@@ -527,11 +527,115 @@ body {
   width: 100%;
   background-color: white;
 }
+/*FAQ STARTS*/
 .faqpage {
   height: 120vh;
   width: 100%;
-  background-color: red;
 }
+#header-faq{
+  align-items: center;
+}
+#header-faq h1{
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 600;
+  font-size:50px;
+  text-align: center;
+  color: #D2B6FF;
+  text-shadow: 4px 4px 10px rgba(120, 74, 250, 0.4), -4px -4px 10px rgba(120, 74, 250, 0.3);
+
+}
+#faq-line{
+  margin-top: -20px;
+  width: 250px;
+  height: 0px;
+  border: 1px solid #AB93D2;
+  box-shadow: -5px 5px 20px rgba(209, 180, 243, 0.07), 5px -5px 20px rgba(209, 180, 243, 0.07), -5px -5px 20px rgba(213, 184, 247, 0.3), 5px 5px 20px rgba(209, 180, 243, 0.3), inset 1px 1px 4px rgba(213, 184, 247, 0.15), inset -1px -1px 2px rgba(209, 180, 243, 0.2);
+}
+#box{
+  justify-items: center;
+  display: grid;
+  gap: 10px;
+  margin: 10px;
+}
+#row1,#row2,#row3,#row5,#row6,#row7{
+  margin: 30px auto;
+  width: 280px;
+  height: 280px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+  transition: 0.4s;
+  background-color: #ab93d2 ;
+  border: solid 2px #5a38bc;
+  color: #151030;
+}
+#row1{
+  grid-column: 1;
+  grid-row: 1;
+}
+#content {
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+#row2{
+  grid-column: 2;
+  grid-row: 1;
+}
+#row3{
+  grid-column: 3;
+  grid-row: 1;
+}
+#row5{
+  grid-column: 1;
+  grid-row: 2;
+}
+#row6{
+  grid-column: 2;
+  grid-row: 2;
+}
+#row7{
+  grid-column: 3;
+  grid-row: 2;
+}
+#row1:hover #content {
+  transform: rotateY( 180deg ) ;
+  transition: transform 0.5s;
+}
+#row2:hover #content {
+  transform: rotateY( 180deg ) ;
+  transition: transform 0.5s;
+}
+#row3:hover #content {
+  transform: rotateY( 180deg ) ;
+  transition: transform 0.5s;
+}
+#row5:hover #content {
+  transform: rotateY( 180deg ) ;
+  transition: transform 0.5s;
+}
+#row6:hover #content {
+  transform: rotateY( 180deg ) ;
+  transition: transform 0.5s;
+}
+#row7:hover #content {
+  transform: rotateY( 180deg ) ;
+  transition: transform 0.5s;
+}
+#front,
+#back {
+  color: #03446A;
+  text-align: center;
+  font-size: 25px;
+  border-radius: 5px;
+  backface-visibility: hidden;
+}
+
+#back {
+  transform: rotateY( 180deg );
+}
+/* FAQ ENDS */
+
 .contactPage {
   height: 70vh;
   width: 100%;
@@ -644,6 +748,15 @@ font-weight: 300;
 font-size: 24px;
 line-height: 28px;
 text-align: center;
+margin-top: -20px;
+width: 250px;
+height: 0px;
 
-color: #FFFFFF;
-}
+
+
+border: 1px solid #AB93D2;
+/* purple neon */
+
+box-shadow: -5px 5px 20px rgba(209, 180, 243, 0.07), 5px -5px 20px rgba(209, 180, 243, 0.07), -5px -5px 20px rgba(213, 184, 247, 0.3), 5px 5px 20px rgba(209, 180, 243, 0.3), inset 1px 1px 4px rgba(213, 184, 247, 0.15), inset -1px -1px 2px rgba(209, 180, 243, 0.2);
+/* transform: rotate(-0.2deg); */
+    }
