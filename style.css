@@ -1,8 +1,15 @@
 @font-face {
-    font-family: Gilroy-Light;
-    src: url(fonts/Gilroy-Light.otf) format("opentype");
+  font-family: Gilroy-Light;
+  src: url(fonts/Gilroy-Light.otf) format("opentype");
 }
-@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@font-face {
+    font-family: Montserrat;
+    src: url(fonts/Montserrat-VariableFont_wght.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: Archivo;
+    src: url(fonts/Archivo-VariableFont_wdth\,wght.ttf) format("truetype");
+  }
 body {
   overflow-y: scroll;
   overflow-x: hidden;
@@ -12,36 +19,34 @@ body {
 }
 .navbar {
   position: absolute;
-  width:fit-content;
-  height:fit-content;
+  width: fit-content;
+  height: fit-content;
   background: #0d091d;
   /* glow on nav */
 
-  box-shadow: -0.5rem .5rem 2.1875rem rgba(147, 126, 230, 0.1),
-    .5rem -0.5rem 1.875rem rgba(147, 126, 230, 0.1),
+  box-shadow: -0.5rem 0.5rem 2.1875rem rgba(147, 126, 230, 0.1),
+    0.5rem -0.5rem 1.875rem rgba(147, 126, 230, 0.1),
     -0.5rem -0.5rem 1.875rem rgba(169, 144, 255, 0.1),
-    .5rem .5rem 2.1875rem rgba(147, 126, 230, 0.2),
-    inset .125rem .125rem .375rem rgba(169, 144, 255, 0.15),
-    inset -0.125rem -0.125rem .5rem rgba(147, 126, 230, 0.2);
+    0.5rem 0.5rem 2.1875rem rgba(147, 126, 230, 0.2),
+    inset 0.125rem 0.125rem 0.375rem rgba(169, 144, 255, 0.15),
+    inset -0.125rem -0.125rem 0.5rem rgba(147, 126, 230, 0.2);
 }
 .navbar .logo {
-        margin-top: .625rem;
-        margin-left: .3125rem;
-        margin-right: .3125rem;
-        margin-bottom: .3125rem;
-        position: fixed;
+  margin-top: 0.625rem;
+  margin-left: 0.3125rem;
+  margin-right: 0.3125rem;
+  margin-bottom: 0.3125rem;
+  position: fixed;
 }
 .navbar ul {
-    
-    left: 13.75rem;
-    
-   
-    box-shadow: -0.5rem .5rem 2.1875rem rgba(147, 126, 230, 0.1),
-    .5rem -0.5rem 1.875rem rgba(147, 126, 230, 0.1),
+  left: 13.75rem;
+
+  box-shadow: -0.5rem 0.5rem 2.1875rem rgba(147, 126, 230, 0.1),
+    0.5rem -0.5rem 1.875rem rgba(147, 126, 230, 0.1),
     -0.5rem -0.5rem 1.875rem rgba(169, 144, 255, 0.1),
-    .5rem .5rem 2.1875rem rgba(147, 126, 230, 0.2),
-    inset .125rem .125rem .375rem rgba(169, 144, 255, 0.15),
-    inset -0.125rem -0.125rem .5rem rgba(147, 126, 230, 0.2); 
+    0.5rem 0.5rem 2.1875rem rgba(147, 126, 230, 0.2),
+    inset 0.125rem 0.125rem 0.375rem rgba(169, 144, 255, 0.15),
+    inset -0.125rem -0.125rem 0.5rem rgba(147, 126, 230, 0.2);
   text-align: center;
   list-style-type: none;
   margin: 0;
@@ -58,7 +63,7 @@ body {
 }
 
 .navbar li a {
-  font-family: 'Gilroy-Light';
+  font-family: "Gilroy-Light";
   font-style: normal;
   font-weight: 500;
   font-size: 1.75rem;
@@ -68,7 +73,7 @@ body {
   display: block;
   color: white;
   text-align: center;
-   
+
   padding: 14px 40px;
   text-decoration: none;
 }
@@ -272,14 +277,14 @@ body {
   width: 40%;
   box-sizing: border-box;
   background: #784afa;
-  border: .1875rem solid #784afa;
+  border: 0.1875rem solid #784afa;
   border-radius: 1.25rem;
   font-weight: 600;
   font-size: 1.25rem;
   line-height: 1.75rem;
   text-align: center;
   color: #ffffff;
-  text-shadow: .0625rem .25rem .25rem rgba(34, 72, 116, 0.44);
+  text-shadow: 0.0625rem 0.25rem 0.25rem rgba(34, 72, 116, 0.44);
 }
 
 .rulebookButton {
@@ -287,7 +292,7 @@ body {
   width: 40%;
   background-color: transparent;
   border-radius: 1.25rem;
-  border: .1875rem;
+  border: 0.1875rem;
   border-style: solid;
   border-color: #784afa;
   font-weight: 600;
@@ -295,7 +300,7 @@ body {
   line-height: 1.75rem;
   text-align: center;
   color: #ffffff;
-  text-shadow: .0625rem .25rem .25rem rgba(34, 72, 116, 0.44);
+  text-shadow: 0.0625rem 0.25rem 0.25rem rgba(34, 72, 116, 0.44);
 }
 
 .robovlogo {
@@ -335,19 +340,19 @@ body {
 }
 
 .divider {
-  height: .125rem;
+  height: 0.125rem;
   width: 70%;
   background-color: aliceblue;
   opacity: 0.7;
   align-self: center;
-  border: .1875rem solid #151030;
+  border: 0.1875rem solid #151030;
   /* robo1 */
-  box-shadow: -0.5rem .5rem 2.1875rem rgba(147, 126, 230, 0.1),
-    .5rem -0.5rem 1.875rem rgba(147, 126, 230, 0.1),
+  box-shadow: -0.5rem 0.5rem 2.1875rem rgba(147, 126, 230, 0.1),
+    0.5rem -0.5rem 1.875rem rgba(147, 126, 230, 0.1),
     -0.5rem -0.5rem 1.875rem rgba(169, 144, 255, 0.1),
-    .5rem .5rem 2.1875rem rgba(147, 126, 230, 0.2),
-    inset .125rem .125rem .375rem rgba(169, 144, 255, 0.15),
-    inset -0.125rem -0.125rem .5rem rgba(147, 126, 230, 0.2);
+    0.5rem 0.5rem 2.1875rem rgba(147, 126, 230, 0.2),
+    inset 0.125rem 0.125rem 0.375rem rgba(169, 144, 255, 0.15),
+    inset -0.125rem -0.125rem 0.5rem rgba(147, 126, 230, 0.2);
   transform: rotate(-0.12deg);
 }
 
@@ -361,7 +366,7 @@ body {
 }
 
 .abouttopHeading {
-    height: 10%;
+  height: 10%;
   font-family: "Archivo";
   font-style: normal;
   font-weight: 600;
@@ -369,36 +374,35 @@ body {
   line-height: 3.375rem;
   text-align: center;
   color: #d2b6ff;
-  text-shadow: .25rem .25rem .625rem rgba(120, 74, 250, 0.4),
-    -0.25rem -0.25rem .625rem rgba(120, 74, 250, 0.3);
+  text-shadow: 0.25rem 0.25rem 0.625rem rgba(120, 74, 250, 0.4),
+    -0.25rem -0.25rem 0.625rem rgba(120, 74, 250, 0.3);
 }
 
 .abouttopHeading p {
-    margin: 0rem;
+  margin: 0rem;
 }
 
 .videoDiv {
-    height: 70%;
-    width: 80%;
+  height: 70%;
+  width: 80%;
 }
 
 .buttonDivAbout {
-    height: 10%;
-    width: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+  height: 10%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .robowarsAbout {
-    height: 80%;
-    width: 40%;
-    background: rgba(120, 74, 250, 0.4);
-    border: 3px solid #784AFA;
-    border-radius: 10px;
-    color: white;
-    font-size: 25px;
-
+  height: 80%;
+  width: 40%;
+  background: rgba(120, 74, 250, 0.4);
+  border: 3px solid #784afa;
+  border-radius: 10px;
+  color: white;
+  font-size: 25px;
 }
 
 .robowarsAbout p {
@@ -406,13 +410,13 @@ body {
 }
 
 .roboviticsAbout {
-    height: 80%;
-    width: 40%;
-    background: rgba(158, 135, 251, 0.9);
-    border: 3px solid #9E87FB;
-    border-radius: 10px;
-    color: white;
-    font-size: 25px;
+  height: 80%;
+  width: 40%;
+  background: rgba(158, 135, 251, 0.9);
+  border: 3px solid #9e87fb;
+  border-radius: 10px;
+  color: white;
+  font-size: 25px;
 }
 
 .roboviticsAbout p {
@@ -420,11 +424,16 @@ body {
 }
 
 .abouttextDivider {
-    height: 1%;
-    width: 100%;
-    border: .1875rem solid #AB93D2;
-/* purple neon */
-box-shadow: -0.3125rem .3125rem 1.25rem rgba(209, 180, 243, 0.07), .3125rem -0.3125rem 1.25rem rgba(209, 180, 243, 0.07), -0.3125rem -0.3125rem 1.25rem rgba(213, 184, 247, 0.3), .3125rem .3125rem 1.25rem rgba(209, 180, 243, 0.3), inset .0625rem .0625rem .25rem rgba(213, 184, 247, 0.15), inset -0.0625rem -0.0625rem .125rem rgba(209, 180, 243, 0.2);
+  height: 1%;
+  width: 100%;
+  border: 0.1875rem solid #ab93d2;
+  /* purple neon */
+  box-shadow: -0.3125rem 0.3125rem 1.25rem rgba(209, 180, 243, 0.07),
+    0.3125rem -0.3125rem 1.25rem rgba(209, 180, 243, 0.07),
+    -0.3125rem -0.3125rem 1.25rem rgba(213, 184, 247, 0.3),
+    0.3125rem 0.3125rem 1.25rem rgba(209, 180, 243, 0.3),
+    inset 0.0625rem 0.0625rem 0.25rem rgba(213, 184, 247, 0.15),
+    inset -0.0625rem -0.0625rem 0.125rem rgba(209, 180, 243, 0.2);
 }
 /* .basics .background {
     background-color: aliceblue;
@@ -442,7 +451,6 @@ box-shadow: -0.3125rem .3125rem 1.25rem rgba(209, 180, 243, 0.07), .3125rem -0.3
     height: 100%;
 } */
 
-
 .timeLinePage {
   height: 175vh;
   width: 100%;
@@ -452,8 +460,67 @@ box-shadow: -0.3125rem .3125rem 1.25rem rgba(209, 180, 243, 0.07), .3125rem -0.3
 .judgesPage {
   height: 100vh;
   width: 100%;
-  background-color: palegreen;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
 }
+
+.judgehead{
+  display: flex;
+  flex-direction: column;
+}
+
+.judgebox{
+  margin-top: 15vh;
+  display: grid;
+  grid-template-rows: 50vh;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+}
+
+.judge{
+  display: grid;
+  grid-template-rows: 100vh;
+  grid-template-columns: 1fr;
+  border: 5px solid #784AFA;
+  width: 30vh;
+  height: 30vh;
+  border-radius: 30vh;
+  padding: 10px;
+  margin: 0 15vh;
+  justify-items: center;
+}
+
+.info{
+  background-color: #9E87FB;
+  display: grid;
+  width: 17vh;
+  height: 17vh;
+  border-radius: 17vh;
+  align-items: center;
+  color: white;
+  padding: 6vh;
+  border: 1px solid white;
+  font-family: 'Gilroy-Light';
+  font-size: 2.5vh;
+  justify-content: space-evenly;
+}
+
+.judge img{
+  width: 29vh;
+  height: 29vh;
+  border-radius: 29vh;
+  padding: 0;
+  
+}
+
+.judge img:hover{
+  transition: 1.2s ease-in-out;
+  display: none;
+}
+
+
 
 .publicationPage {
   height: 200vh;
@@ -572,30 +639,115 @@ box-shadow: -0.3125rem .3125rem 1.25rem rgba(209, 180, 243, 0.07), .3125rem -0.3
 .contactPage {
   height: 70vh;
   width: 100%;
- 
 }
-.contactPage .header-contactus{
-    align-items: center;
-   
+.contactPage .header-contactus {
+  align-items: center;
 }
-.contactPage .header-contactus h1{
-    
+.contactPage .header-contactus h1 {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  /* line-height: 54px; */
+  text-align: center;
 
-font-family: 'Archivo';
+  color: #d2b6ff;
+
+  text-shadow: 4px 4px 10px rgba(120, 74, 250, 0.4),
+    -4px -4px 10px rgba(120, 74, 250, 0.3);
+}
+.contactPage .header-contactus .line {
+    
+  margin-top: -20px;
+  width: 250px;
+  height: 0px;
+
+  border: 1px solid #ab93d2;
+  /* purple neon */
+
+  box-shadow: -5px 5px 20px rgba(209, 180, 243, 0.07),
+    5px -5px 20px rgba(209, 180, 243, 0.07),
+    -5px -5px 20px rgba(213, 184, 247, 0.3),
+    5px 5px 20px rgba(209, 180, 243, 0.3),
+    inset 1px 1px 4px rgba(213, 184, 247, 0.15),
+    inset -1px -1px 2px rgba(209, 180, 243, 0.2);
+  /* transform: rotate(-0.2deg); */
+}
+.contactPage .pageBody {
+    margin-top: 3.5%;
+    display: flex;
+    
+    
+    justify-content:flex-start;
+}
+.contactPage .pageBody .roboLogo {
+    margin-left: 5%;
+        display: flex;
+}
+.contactPage .pageBody .roboLogo mainLogo{
+    width: 25%;
+    height: auto;
+    
+}
+.contactPage .pageBody .roboLogo  h1{
+
+margin-top: 15%;
+color: white;    
+font-family: 'Montserrat';
 font-style: normal;
-font-weight: 600;
-font-size:50px;
-/* line-height: 54px; */
+margin-left: 7%;
+font-size: 60px;
+}
+.contactPage .pageBody .roboLogo ul{
+    list-style-type: none;
+    White-space: nowrap;
+    margin-left: 0px;
+}
+.contactPage .pageBody .roboLogo li{
+    margin: 2.5%;
+    display:inline;
+    
+}
+.contactPage .pageBody .Contacts {
+   
+    display:block;
+}
+.contactPage .pageBody .Contacts .email{
+    White-space: nowrap;
+    margin-left: 50%;
+    color: white;
+    
+}
+.contactPage .pageBody .Contacts .email p{
+    font-family: 'Gilroy-Light';
+font-style: normal;
+font-weight: 300;
+font-size: 30px;
+line-height: 35px;
 text-align: center;
 
-color: #D2B6FF;
-
-
-text-shadow: 4px 4px 10px rgba(120, 74, 250, 0.4), -4px -4px 10px rgba(120, 74, 250, 0.3);
+color: #FFFFFF;
 }
-.contactPage .header-contactus .line{
+.contactPage .pageBody .Contacts .clubContacts {
+    display: flex;
+    margin-left: 30%;
+}
+.contactPage .pageBody .Contacts .clubContacts ul{
+    text-align: center;
+   
+    list-style-type: none;
+    White-space: nowrap;
+    color: white;
     
-
+}
+.contactPage .pageBody .Contacts .clubContacts li{
+    
+font-family: 'Gilroy-Light';
+font-style: normal;
+font-weight: 300;
+font-size: 24px;
+line-height: 28px;
+text-align: center;
 margin-top: -20px;
 width: 250px;
 height: 0px;
