@@ -2,6 +2,7 @@
   font-family: Gilroy-Light;
   src: url(fonts/Gilroy-Light.otf) format("opentype");
 }
+
 @font-face {
     font-family: Montserrat;
     src: url(fonts/Montserrat-VariableFont_wght.ttf) format("truetype");
@@ -454,7 +455,11 @@ body {
 .timeLinePage {
   height: 175vh;
   width: 100%;
-  background-color: red;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .judgesPage {
@@ -657,6 +662,40 @@ body {
     -4px -4px 10px rgba(120, 74, 250, 0.3);
 }
 .contactPage .header-contactus .line {
+  margin-top: -20px;
+  width: 250px;
+  height: 0px;
+
+  border: 1px solid #ab93d2;
+  /* purple neon */
+
+  box-shadow: -5px 5px 20px rgba(209, 180, 243, 0.07),
+    5px -5px 20px rgba(209, 180, 243, 0.07),
+    -5px -5px 20px rgba(213, 184, 247, 0.3),
+    5px 5px 20px rgba(209, 180, 243, 0.3),
+    inset 1px 1px 4px rgba(213, 184, 247, 0.15),
+    inset -1px -1px 2px rgba(209, 180, 243, 0.2);
+  /* transform: rotate(-0.2deg); */
+}
+
+.timelineTopHeading {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  width: 13%;
+  height: 5%;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+  color: #d2b6ff;
+
+  text-shadow: 4px 4px 10px rgba(120, 74, 250, 0.4),
+    -4px -4px 10px rgba(120, 74, 250, 0.3);
+}
+.contactPage .header-contactus .line {
     
   margin-top: -20px;
   width: 250px;
@@ -752,7 +791,107 @@ margin-top: -20px;
 width: 250px;
 height: 0px;
 
+.timelineTopHeading p {
+  margin: 0px;
+  color: #d2b6ff;
+  font-size: 50px;
+  border: 1px solid #151030;
+  text-shadow: 4px 4px 10px rgba(120, 74, 250, 0.4),
+    -4px -4px 10px rgba(120, 74, 250, 0.3);
+}
 
+.timelineDivider {
+  width: 100%;
+  border: 3px solid #ab93d2;
+  /* purple neon */
+  box-shadow: -5px 5px 20px rgba(209, 180, 243, 0.07),
+    5px -5px 20px rgba(209, 180, 243, 0.07),
+    -5px -5px 20px rgba(213, 184, 247, 0.3),
+    5px 5px 20px rgba(209, 180, 243, 0.3),
+    inset 1px 1px 4px rgba(213, 184, 247, 0.15),
+    inset -1px -1px 2px rgba(209, 180, 243, 0.2);
+}
+
+.timeline {
+  height: 90%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.startbox {
+  height: 200px;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.startbox img {
+  z-index: 3;
+}
+
+.startRect p {
+  margin: 0px;
+}
+.startRect {
+  height: 80%;
+  width: 80%;
+  background-color: #784afa;
+  position: relative;
+  left: -8%;
+  border-radius: 20px;
+  background: #b7b9f8;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  padding-left: 10%;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 26px;
+  font-family: "Archivo";
+  font-style: normal;
+  color: #0d091d;
+}
+
+.openDiv {
+  width: 70%;
+  height: 2px;
+  background-color: black;
+}
+
+.hexagon {
+  height: 40%;
+  width: 90%;
+  position: relative;
+  top: -10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hexagon img {
+  height: 90%;
+}
+
+.connectorA {
+  height: 20%;
+  position: relative;
+  top: -3%;
+}
+
+.connectorB {
+  height: 20%;
+  position: relative;
+  top: -14%;
+}
+
+#closing {
+  position: relative;
+  top: -15%;
+}
 
 border: 1px solid #AB93D2;
 /* purple neon */
