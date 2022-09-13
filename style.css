@@ -787,9 +787,8 @@ font-weight: 300;
 font-size: 24px;
 line-height: 28px;
 text-align: center;
-margin-top: -20px;
-width: 250px;
-height: 0px;
+color: #FFFFFF;
+
 }
 
 .timelineTopHeading p {
