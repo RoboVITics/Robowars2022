@@ -1,0 +1,31 @@
+
+
+.main-container{
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+
+}
+
+.container-ec{
+    background-color: aqua;
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.kgHeading{
+    background-color: purple;
+    width: 40vw;
+    height: 5vh;
+}
+
+.kgDescription{
+    background-color: blue;
+    width: 40vw;
+    height: 40vh;
+}
