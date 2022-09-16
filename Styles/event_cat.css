@@ -1,7 +1,6 @@
 
 
 .main-container{
-    background-color: white;
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -9,7 +8,6 @@
 }
 
 .container-ec{
-    background-color: aqua;
     width: 50vw;
     height: 100vh;
     display: flex;
@@ -19,13 +17,18 @@
 }
 
 .kgHeading{
-    background-color: purple;
-    width: 40vw;
+    width: 35vw;
     height: 5vh;
+    margin-bottom: 10px;
+    background: rgba(158, 135, 251, 0.9);
+    border: 3px solid #9E87FB;
+    border-radius: 10px;
 }
 
 .kgDescription{
-    background-color: blue;
-    width: 40vw;
-    height: 40vh;
+    background: rgba(120, 74, 250, 0.4);
+    border: 3px solid #784AFA;
+    border-radius: 10px;
+    width: 35vw;
+    height: 50vh;
 }
