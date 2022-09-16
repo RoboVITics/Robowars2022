@@ -4,6 +4,7 @@
     width: 100vw;
     height: 100vh;
     display: flex;
+    align-items: center;
 
 }
 
@@ -31,4 +32,26 @@
     border-radius: 10px;
     width: 35vw;
     height: 50vh;
+}
+
+
+@media only screen and (max-width: 769px){
+    .main-container{
+        flex-direction: column;
+        margin-top: 10px;
+        overflow: scroll;
+    }
+
+    .container-ec{
+        margin-bottom: 30px;
+        width: 100vw;
+    }
+
+    .kgHeading{
+        width: 60vw;
+    }
+
+    .kgDescription{
+        width: 60vw;
+    }
 }
