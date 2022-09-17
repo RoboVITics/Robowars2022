@@ -633,7 +633,7 @@ body {
 .contactPage {
   height: 70vh;
   width: 100%;
-  /* display: none; */
+  display: none;
 }
 .contactPage .header-contactus {
   align-items: center;
