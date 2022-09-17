@@ -1,4 +1,5 @@
 /*FAQ STARTS*/
+@import url('http://fonts.cdnfonts.com/css/gilroy-bold');
 .faqpage {
     height: 120vh;
     width: 100%;
@@ -133,12 +134,18 @@
     border-radius: 5px;
     backface-visibility: hidden;
 }
-
+#front{
+    font-family:'Gilroy-Medium', sans-serif;
+    font-size: 100%;
+}
+#back{
+    font-family:'Gilroy-Regular', sans-serif;
+    font-size: 100%;
+}
 #back {
     transform: rotateY(180deg);
 }
 @media only screen and (max-width: 768px){
-    @import url('http://fonts.cdnfonts.com/css/gilroy-bold');
     .faqpage {
         height: 120vh;
         width: 95%;
