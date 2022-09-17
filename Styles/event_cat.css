@@ -1,0 +1,57 @@
+
+
+.main-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
+}
+
+.container-ec{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.kgHeading{
+    width: 35vw;
+    height: 5vh;
+    margin-bottom: 10px;
+    background: rgba(158, 135, 251, 0.9);
+    border: 3px solid #9E87FB;
+    border-radius: 10px;
+}
+
+.kgDescription{
+    background: rgba(120, 74, 250, 0.4);
+    border: 3px solid #784AFA;
+    border-radius: 10px;
+    width: 35vw;
+    height: 50vh;
+}
+
+
+@media only screen and (max-width: 769px){
+    .main-container{
+        flex-direction: column;
+        margin-top: 10px;
+        overflow: scroll;
+    }
+
+    .container-ec{
+        margin-bottom: 30px;
+        width: 100vw;
+    }
+
+    .kgHeading{
+        width: 60vw;
+    }
+
+    .kgDescription{
+        width: 60vw;
+    }
+}
