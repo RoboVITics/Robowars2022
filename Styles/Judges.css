@@ -66,23 +66,51 @@
     opacity: 0;
   }
 
-/* 
-@media (max-width: 767px) {
-    .judgebox{
-        flex-direction: column;
-        height: ;
-    }
 
+@media (max-width: 767px) {
+    .judgesPage{
+        height: 300vh;
+        margin-left: 10%;
+        
+    }
+    .judgehead {
+        display: flex;
+        flex-direction: row;
+      }
+      .judgebox {
+        margin-top: 2vh;
+        width: 100%;
+        height: 70%;
+        /* display: grid;
+        grid-template-rows: 2;
+        grid-template-columns: 1fr; */
+        display: block;
+        align-items: center;
+        overflow: scroll;
+        overflow-y: hidden;
+      }
+      
     .judge {
+        margin-top: 10vh;
+        margin-left: 30vh;
         width: 20vh;
         height: 20vh;
         border-radius: 20vh;
       }
+      
+      .info {
+        width: 10vh;
+        height: 10vh;
+        border-radius: 10vh;
+        padding: 5vh;
+        font-size: 2vh;
+
+      }
 
       .judge img {
-        width: 19vh;
-        height: 19vh;
-        border-radius: 19vh;
+        width: 20vh;
+        height: 20vh;
+        border-radius: 20vh;
         padding: 0;
       }
-} */
+}
