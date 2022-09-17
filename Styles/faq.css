@@ -141,6 +141,7 @@
 #back{
     font-family:'Gilroy-Regular', sans-serif;
     font-size: 100%;
+    /*commit*/
 }
 #back {
     transform: rotateY(180deg);
