@@ -138,6 +138,19 @@
     transform: rotateY(180deg);
 }
 @media only screen and (max-width: 768px){
+    @import url('http://fonts.cdnfonts.com/css/gilroy-bold');
+    .faqpage {
+        height: 120vh;
+        width: 95%;
+    }
+    #header-faq h1{
+        font-size:30px;
+    }
+    #faq-line {
+        margin-top: -20px;
+        width: 100px;
+        height: 0px;
+    }
     #row1 {
         grid-column: 1;
         grid-row: 1;
@@ -173,9 +186,17 @@
     #row5,
     #row6,
     #row7 {
-    margin: 30px auto;
-    width: 380px;
-    height: 150px;
+    margin: 10px auto;
+    width: 270px;
+    height: 120px;
+    }
+    #front{
+        font-family:'Gilroy-Medium', sans-serif;
+        font-size: 90%;
+    }
+    #back{
+        font-family: 'Gilroy-Regular', sans-serif;
+        font-size: 80%;
     }
 
 }
