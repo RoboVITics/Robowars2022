@@ -53,7 +53,8 @@
     .contactPage .mEmail {
         white-space: nowrap;
         color: white;
-        font-size: small;
+        font-weight: bold;
+        font-size: large;
       }
     .contactPage .mEmail p {
       
@@ -111,7 +112,7 @@
 
     }
     @media screen and (min-width: 482px){
-        .contactPage .pageBody .mEmail {
+        .contactPage .mEmail {
             display: none;
         }
         .contactPage .pageBody .Contacts .MobclubContacts {
