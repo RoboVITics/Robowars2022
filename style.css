@@ -592,18 +592,6 @@ body {
   width: 100%;
 } */
 
-.timelineTopHeading {
-  margin-top: 2%;
-  margin-bottom: 2%;
-  width: 13%;
-  height: 5%;
-  /* background-color: red; */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-}
-
 /* color: #d2b6ff;
 
   text-shadow: 4px 4px 10px rgba(120, 74, 250, 0.4),

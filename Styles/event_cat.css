@@ -48,10 +48,28 @@
     }
 
     .kgHeading{
-        width: 60vw;
+        width: 80vw;
+        
     }
 
     .kgDescription{
-        width: 60vw;
+        width: 80vw;
+        height: 40vh;
+    }
+
+    
+    #header-faq {
+        align-items: center;
+    }
+
+    #header-faq h1 {
+        /* margin-top: -45px; */
+        font-size: 30px;
+        
+    }
+
+    #faq-line {
+        margin-bottom: 20px;
+        
     }
 }
