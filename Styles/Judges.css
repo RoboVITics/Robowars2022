@@ -1,88 +1,96 @@
 .judgesPage {
-    height: 70vh;
+    height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
   }
-  
-  .judgehead {
+/* Container which has 3 Judges */
+  .container{
     display: flex;
-    flex-direction: column;
-  }
-  
-  .judgebox {
-    width: 100%;
-    height: 70%;
-    margin-top: 10vh;
-    /* display: grid;
-    grid-template-rows: 50vh;
-    grid-template-columns: 1fr 1fr 1fr; */
-    display: flex;
-    align-items: center;
-    overflow: scroll;
-    overflow-y: hidden;
-  }
-  
-  .judge {
-    display: grid;
-    grid-template-rows: 100vh;
-    grid-template-columns: 1fr;
-    border: 5px solid #784afa;
-    width: 30vh;
-    height: 30vh;
-    border-radius: 30vh;
-    padding: 10px;
-    margin: 0 15vh;
-    justify-items: center;
-  }
-  
-  .info {
-    background-color: #9e87fb;
-    display: grid;
-    width: 17vh;
-    height: 17vh;
-    border-radius: 17vh;
-    align-items: center;
-    color: white;
-    padding: 6vh;
-    border: 1px solid white;
-    font-family: "Gilroy-Light";
-    font-size: 2.5vh;
-    justify-content: space-evenly;
-  }
-  
-  .judge img {
-    width: 29vh;
-    height: 29vh;
-    border-radius: 29vh;
-    padding: 0;
-  }
-  
-  .judgeImg:hover {
-    transition: 0.5s ease-in-out;
-    display: none;
-    opacity: 0;
-  }
+    flex-direction: row;
+    width: 75%;
+    justify-content: space-between;
+    /* border: 1px solid white; */
+    margin: 5% auto;
+}
 
-/* 
-@media (max-width: 767px) {
-    .judgebox{
+
+/* Individual Judge Element Property */
+.circle{
+    border-radius: 50%;
+}
+
+.outer {
+    width:30vh;
+    height:30vh;
+    position:relative;
+    border: 5px solid #784afa;
+}
+
+.inner {
+    top: 7%; left:7%; /* of the container */
+    width: 86%; /* of the container */
+    height:86%; /* of the container */
+    position: relative;
+}
+
+.info {
+    background-color: #9e87fb;
+    position: absolute;
+    /* Aligning the Info */
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    font-family: "Gilroy-Light";
+    font-size: 1em;
+    color: white;
+    
+}
+
+/* Show the participants details when hovered over: */
+img.inner:hover{
+    display: none; 
+    opacity: 0;
+    transition: ease-in-out 2s;
+}
+
+@media (max-width: 768px) {
+
+    .judgesPage{
+        height: 100vh;
+        justify-content: center;
+    }
+    .container{
+        margin-top: 5%;
+        width: 35%;
+        display: flex;
         flex-direction: column;
-        height: ;
+        align-items: center;
+        overflow-y: scroll;
+        overflow-x: hidden;
     }
 
-    .judge {
-        width: 20vh;
-        height: 20vh;
-        border-radius: 20vh;
-      }
+    ::-webkit-scrollbar {
+        display: none;
+    }
 
-      .judge img {
-        width: 19vh;
-        height: 19vh;
-        border-radius: 19vh;
-        padding: 0;
-      }
-} */
+    .outer {
+        margin-bottom: 12%;
+    }
+
+    .info{
+        font-size: 0.8em;
+    }
+
+    img.inner:hover{
+        display: flex; 
+    }
+    img.inner:active{
+        opacity: 0;
+        display: none;
+    }
+}
