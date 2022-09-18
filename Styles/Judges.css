@@ -1,140 +1,98 @@
 .judgesPage {
-    height: 70vh;
+    height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
   }
-  
-  
-  .judgebox {
-    width: 100%;
-    height: 70%;
-
-    margin-bottom: 5vh;
-    margin-left: 17vh;
-    /* display: grid;
-    grid-template-rows: 50vh;
-    grid-template-columns: 1fr 1fr 1fr; */
+/* Container which has 3 Judges */
+  .container{
     display: flex;
-    align-items: center;
-    /* overflow: scroll;
-    overflow-y: hidden; */
-  }
-  /*Judge Circle and contents */
-  .judge {
-    display: grid;
-    grid-template-rows: 100vh;
-    grid-template-columns: 1fr;
-    border: 5px solid #784afa;
-    width: 28vh;
-    height: 28vh;
-    border-radius: 50%;
-    padding: 10px;
-    margin: 0 15vh;
-    justify-items: center;
-  }
-  
-  .info {
-    background-color: #9e87fb;
-    display: grid;
-    width: 15vh;
-    height: 15vh;
-    border-radius: 15vh;
-    align-items: center;
-    color: white;
-    padding: 6vh;
-    border: 1px solid white;
-    font-family: "Gilroy-Light";
-    font-size: 2.5vh;
-    justify-content: space-evenly;
-  }
-  
-  .judge img {
-    width: 27vh;
-    height: 27vh;
-    border-radius: 27vh;
-    padding: 0;
-  }
-  
-  .judgeImg:hover {
-    transition: 0.5s ease-in-out;
-    display: none;
-    opacity: 0;
-  }
-
-  .outer {
-    background-color:blue;
-    width:400px; /* You can define it by % also */
-    height:400px; /* You can define it by % also */
-    position:relative;
-    border:1px solid black;
-    border-radius: 50%;
-    }
-    
-    .inner {
-    background-color:yellow;
-    top: 25%; left:25%; /* of the container */
-    width:50%; /* of the container */
-    height:50%; /* of the container */
-    position: relative;
-    border:1px solid black;
-    border-radius: 50%;
-    }
-
-
-  @media (max-width: 767px) {
-    .judgesPage{
-        height: 100vh;  
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        margin-left: 0;
-    }
-      .judgebox {
-        background-color: red;
-        width: 50%;
-        height: 80%;
-        margin-left: 1vh;
-        /* display: grid;
-        grid-template-rows: 2;
-        grid-template-columns: 1fr; */
-        display: block;
-        align-items: center;
-
-        overflow-x: hidden;
-        overflow-y: scroll;
-      }
-      
-    .judge {
-        margin-top: 5vh;
-        margin-left: 5vh;
-        margin-right: 20vh;
-        width: 20vh;
-        height: 20vh;
-        border-radius: 20vh;
-      }
-      
-      .info {
-        width: 10vh;
-        height: 10vh;
-        border-radius: 10vh;
-        padding: 5vh;
-        font-size: 2vh;
-
-      }
-
-      .judge img {
-        width: 20vh;
-        height: 20vh;
-        border-radius: 20vh;
-        padding: 0;
-      }
-
-      .info{
-        display: none;
-      }
+    flex-direction: row;
+    width: 75%;
+    justify-content: space-between;
+    /* border: 1px solid white; */
+    margin: 5% auto;
 }
 
 
+/* Individual Judge Element Property */
+.circle{
+    border-radius: 50%;
+}
+
+.outer {
+    width:30vh;
+    height:30vh;
+    position:relative;
+    border: 5px solid #784afa;
+}
+
+.inner {
+    top: 7%; left:7%; /* of the container */
+    width: 86%; /* of the container */
+    height:86%; /* of the container */
+    position: relative;
+}
+
+.info {
+    background-color: #9e87fb;
+    position: absolute;
+    /* Aligning the Info */
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    font-family: "Gilroy-Light";
+    font-size: 1em;
+    color: white;
+    
+}
+
+/* Show the participants details when hovered over: */
+img.inner:hover{
+    display: none; 
+    opacity: 0;
+    transition: ease-in-out 2s;
+}
+
+@media (max-width: 768px) {
+
+    .judgesPage{
+        height: 100vh;
+        justify-content: center;
+    }
+    .container{
+        margin-top: 5%;
+        width: 35%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    .outer {
+        margin-bottom: 12%;
+    }
+
+    .info{
+        font-size: 0.8em;
+    }
+
+    img.inner:hover{
+        display: flex; 
+    }
+    img.inner:active{
+        opacity: 0;
+        display: none;
+    }
+
+
+}
