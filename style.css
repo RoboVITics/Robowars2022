@@ -621,6 +621,104 @@ body {
   align-items: center;
   justify-content: center;
 }
+#matches,#date1,#date2,#team1,#team2{
+  color: white;
+}
+#diff{
+  position: absolute;
+  height: 27%;
+  border: 1px solid white;
+  top: 37%;
+}
+#matches{
+  text-shadow: 0 0 3px #020000, 0 0 5px #9a31f0;
+  position: absolute;
+  top: 20%;
+  font-size: 130%;
+}
+#date1{
+  transition: 1s ease;
+  font-size: 150%;
+  position: absolute;
+  top: 27%;
+}
+#date2{
+  transition: 1s ease;
+  font-size: 150%;
+  position: absolute;
+  top: 70%;
+}
+#team1{
+  font-size: 130%;
+  position: absolute;
+  left: 10%;
+}
+#team2{
+  font-size: 130%;
+  position: absolute;
+  right: 10%;
+}
+#next,#prev{
+  color: aliceblue;
+  cursor: pointer;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+#next{
+  position: absolute;
+  right: -10%;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+#prev{
+  position: absolute;
+  left: -10%;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+#next:hover{
+  border-radius: 100px;
+  color: #0D091D;
+  background-color: #784afa;
+}
+#prev:hover{
+  border-radius: 100px;
+  color: #0D091D;
+  background-color: #784afa;
+}
+@media only screen and (max-width: 768px){
+  #team1{
+    font-size: 130%;
+    position: absolute;
+    left: 20%;
+  }
+  #team2{
+    font-size: 130%;
+    position: absolute;
+    right: 20%;
+  }
+  #next{
+    right: 5%;
+  }
+  #prev{
+    left: 5%;
+  }
+}
 
 .hexagon img {
   height: 90%;
