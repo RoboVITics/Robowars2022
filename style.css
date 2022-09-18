@@ -213,7 +213,7 @@ body {
 
 .upperLayer {
   position: absolute;
-  height: 890vh;
+  height: 1000vh;
   width: 100vw;
   background-color: transparent;
   z-index: 10;
@@ -222,7 +222,7 @@ body {
 }
 
 .topHeading {
-  height: 95vh;
+  height: 120vh;
   width: 100%;
   display: flex;
   align-items: center;
@@ -357,7 +357,7 @@ body {
 
   .contentTriggers {
     flex-direction: column;
-    height: 40%;
+    height: 20%;
   }
 
   .registerButton {
@@ -370,18 +370,28 @@ body {
     width: 70%;
   }
 
+  .headingTitleContent {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
   .contentTitle {
-    
     position:relative;
-    height: fit-content;
+    height: 80%;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
   }
 
   .warsTitles {
-    height: 10%;
+    height: 30%;
     margin: 20px;
+  }
+
+  .warsLogo {
+    width: 50%;
   }
 
   .contactPage .pageBody {
@@ -453,8 +463,8 @@ body {
 }
 
 .bot {
-  height: 40%;
-  width: 88%;
+  height: 100%;
+  width: 100%;
   display: flex;
   align-items: center;
   /* background-color: #784afa; */
@@ -480,87 +490,13 @@ body {
   transform: rotate(-0.12deg);
 }
 
-.aboutPage {
-  height: 90vh;
+.eventCategories {
+  height: 150vh;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-.abouttopHeading {
-  height: 10%;
-  font-family: "Archivo";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 2.5rem;
-  line-height: 3.375rem;
-  text-align: center;
-  color: #d2b6ff;
-  text-shadow: .25rem .25rem .625rem rgba(120, 74, 250, 0.4),
-    -0.25rem -0.25rem .625rem rgba(120, 74, 250, 0.3);
-}
-
-.abouttopHeading p {
-  margin: 0rem;
-}
-
-.videoDiv {
-  height: 70%;
-  width: 80%;
-}
-
-.buttonDivAbout {
-  height: 10%;
-  width: 80%;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-.robowarsAbout {
-  height: 80%;
-  width: 40%;
-  background: rgba(120, 74, 250, 0.4);
-  border: 3px solid #784afa;
-  border-radius: 10px;
-  color: white;
-  font-size: 25px;
-}
-
-.robowarsAbout p {
-  margin: 0px;
-}
-
-.roboviticsAbout {
-  height: 80%;
-  width: 40%;
-  background: rgba(158, 135, 251, 0.9);
-  border: 3px solid #9e87fb;
-  border-radius: 10px;
-  color: white;
-  font-size: 25px;
+  background-color: transparent;
 }
 
 
-
-.roboviticsAbout p {
-  margin: 0px;
-}
-
-.abouttextDivider {
-  height: 1%;
-  width: 100%;
-  border: .1875rem solid #ab93d2;
-  /* purple neon */
-  box-shadow: -0.3125rem .3125rem 1.25rem rgba(209, 180, 243, 0.07),
-    .3125rem -0.3125rem 1.25rem rgba(209, 180, 243, 0.07),
-    -0.3125rem -0.3125rem 1.25rem rgba(213, 184, 247, 0.3),
-    .3125rem .3125rem 1.25rem rgba(209, 180, 243, 0.3),
-    inset .0625rem .0625rem .25rem rgba(213, 184, 247, 0.15),
-    inset -0.0625rem -0.0625rem .125rem rgba(209, 180, 243, 0.2);
-}
 /* .basics .background {
     background-color: aliceblue;
     height: 100%;
