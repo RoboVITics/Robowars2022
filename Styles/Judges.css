@@ -89,8 +89,5 @@ img.inner:hover{
     img.inner:hover{
         display: flex; 
     }
-    img.inner:active{
-        opacity: 0;
-        display: none;
-    }
+
 }
