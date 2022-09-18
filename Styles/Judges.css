@@ -48,14 +48,13 @@
     font-family: "Gilroy-Light";
     font-size: 1em;
     color: white;
-    
 }
 
 /* Show the participants details when hovered over: */
 img.inner:hover{
     display: none; 
     opacity: 0;
-    transition: ease-in-out 2s;
+    transition: ease-in-out 1s;
 }
 
 @media (max-width: 768px) {
