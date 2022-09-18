@@ -66,7 +66,7 @@ img.inner:hover{
     }
     .container{
         margin-top: 5%;
-        width: 35%;
+        width: 50%;
         display: flex;
         flex-direction: column;
         align-items: center;
