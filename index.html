@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="Styles/Judges.css">
     <link rel="stylesheet" href="Styles/Publication.css">
     <link rel="stylesheet" href="Styles/contactUs.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="main.js"></script>
 </head>
 <body>
@@ -28,6 +29,33 @@
           </ul>
        </div>
     </div>
+    <div class="topnav">
+        <a href="#home" class="active">
+            <div class="logo">
+                <img src="https://res.cloudinary.com/db4f0fmy7/image/upload/v1662832110/robowars/RoboVITics-Logo_2_qm9wch.png" alt="">
+            </div>
+        </a>
+        <div id="myLinks">
+            <a href="">Home</a>
+            <a href="">About Us</a>
+            <a href="">Timeline</a>
+            <a href="">FAQ</a>
+            <a href="">Contact Us</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <script>
+        function myFunction() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+        </script>
     <div class="bottomLayer">
         <div class="firstLayer">
             <img src="https://res.cloudinary.com/robovitics/image/upload/v1662826704/Robowars2022/backgroundHeader_xab3sn.png" alt="">
@@ -293,7 +321,7 @@
                 </center>
             </div>
             <div class="mEmail">
-                <p style="font-size:larger">Email: robovitics@vit.ac.in</p>
+                <p style="font-size:larger;font-weight:bold;">Email: robovitics@vit.ac.in</p>
             </div>
         <div class="pageBody">
             
@@ -317,7 +345,7 @@
             </div>
             <div class="Contacts">
                 <div class="email">
-                    <p>Email: robovitics@vit.ac.in</p>
+                    <p style="font-weight:bold;">Email: robovitics@vit.ac.in</p>
                 </div>
                 <div class="clubContacts">
                     <ul>
@@ -328,7 +356,7 @@
                         
                       </ul> 
                       <ul>
-                        <li style="font-weight:700">Phone: (+91) 84910 92405</li>
+                        <li style="font-weight:700"><a style="color:white">Phone: (+91) 84910 92405</a></li>
                         <li style="font-weight:700">Adwyck Gupta</li>
                         <li>Vice Chairperson</li>
                         <li>Robovitics</li>
@@ -337,7 +365,7 @@
                 </div>
                 <div class="MobclubContacts">
                     <ul>
-                        <li style="font-weight:700">Phone: (+91) 9833548555</li>
+                        <li style="font-weight:700;"><a style="color:white">Phone: (+91) 9833548555</a></li>
                         <li style="font-weight:700">Akhil Mahesh</li>
                         <li>Chairperson</li>
                         <li>Robovitics</li>
