@@ -29,6 +29,7 @@ body {
   width: fit-content;
   height: fit-content;
   background: #0d091d;
+  display: flex;
   /* glow on nav */
 
   box-shadow: -0.5rem .5rem 2.1875rem rgba(147, 126, 230, 0.1),
@@ -41,12 +42,13 @@ body {
 .navbar .logo {
   margin-top: .625rem;
   margin-left: .3125rem;
-  margin-right: .3125rem;
+  margin-right: 3rem;
   margin-bottom: .3125rem;
   position: fixed;
 }
+
 .navbar ul {
-  left: 13.75rem;
+  left: 17%;
 
   box-shadow: -0.5rem .5rem 2.1875rem rgba(147, 126, 230, 0.1),
     .5rem -0.5rem 1.875rem rgba(147, 126, 230, 0.1),
@@ -62,7 +64,8 @@ body {
   background-color: #0d091d;
   position: fixed;
   top: 0;
-  width: 70%;
+  width: 65%;
+  right:20%;
 }
 
 .navbar li {
@@ -73,7 +76,7 @@ body {
   font-family: "Gilroy-Light";
   font-style: normal;
   font-weight: 500;
-  font-size: 1.75rem;
+  font-size: 1.4rem;
   line-height: 2.0625rem;
 
   align-self: center;
@@ -81,12 +84,31 @@ body {
   color: white;
   text-align: center;
 
-  padding: 14px 40px;
+  padding: 14px 20px;
   text-decoration: none;
+}
+
+@media (min-width: 1100px){
+  .navbar li a{
+  padding: 14px 25px;
+  }
 }
 
 .navbar li a:hover:not(.active) {
   background-color: #111;
+}
+
+.navbar .logo2 {
+  position: fixed;
+  margin-top: .325rem;
+  margin-left: 85%;
+  justify-content: flex-end;
+  margin-bottom: .3125rem;
+}
+
+.navbar .logo2 img{
+  width: 90%;
+  height: 100%;
 }
 
 .header {
