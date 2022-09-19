@@ -262,20 +262,19 @@
     }
 
     
-    #header-faq {
+    /* #header-faq {
         align-items: center;
-    }
+    } */
 
     #header-faq h1 {
         /* margin-top: -45px; */
-        font-size: 30px;
+        /* font-size: 30px; */
         
     }
 
-    #faq-line {
+    /* #faq-line {
         margin-bottom: 20px;
-        
-    }
+    } */
 
     .mySlides2 {
         margin-left: 25px;
