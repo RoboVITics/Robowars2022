@@ -172,19 +172,28 @@
         <div class="divider"></div>
         <div class="publicationPage">
             <div class="publicationTitle">
-                <p>Publications and Media</p>
+                <p>PUBLICATIONS AND MEDIA</p>
+                <center>
+                <div id="line"></div>
+                </center>
             </div>
             <div class="publicationContent">
-                <div class="pubRow" id="1i" style="height: 100%;">
-                    <img src="https://res.cloudinary.com/robovitics/image/upload/v1663089501/Robowars2022/images_eexi0m.jpg" id="yo"/>
+                <div class="pubRow" id="ki" >
+                    <img src="https://res.cloudinary.com/vit2/image/upload/c_scale,h_240,w_210/v1663565958/Screenshot_2022-09-19-10-56-30-38_6012fa4d4ddec268fc5c7112cbb265e7_p4fvvq.jpg" id="yo"/>
                 </div>
+                <!-- <center> -->
                 <div class="pubCol" id="2i" >
-                      <img class="col mini-box" id="hi" src="https://res.cloudinary.com/robovitics/image/upload/v1663089501/Robowars2022/images_eexi0m.jpg"/>
-                      <img class="col mini-box"id="qi" src="https://res.cloudinary.com/robovitics/image/upload/v1663089501/Robowars2022/images_eexi0m.jpg" />
-                      <img class="col mini-box" id="ai" src="https://res.cloudinary.com/robovitics/image/upload/v1663089501/Robowars2022/images_eexi0m.jpg" />
-                      <img class="col mini-box" id="bi" src="https://res.cloudinary.com/robovitics/image/upload/v1663089501/Robowars2022/images_eexi0m.jpg" />
+                    <img class="col-mini-box"src="https://res.cloudinary.com/vit2/image/upload/c_scale,h_240,w_210/v1663565958/Screenshot_2022-09-19-10-56-30-38_6012fa4d4ddec268fc5c7112cbb265e7_p4fvvq.jpg" id="ne" />
+                      <img class="col mini-box" id="hi" src="https://res.cloudinary.com/vit2/image/upload/c_scale,h_240,w_210/v1663565958/IMG_20220919_110011_pcrbmr.jpg"/>
+                      <img class="col mini-box"id="qi" src="https://res.cloudinary.com/vit2/image/upload/c_scale,h_240,w_210/v1663565958/IMG_20220919_110011_pcrbmr.jpg" />
+                      <img class="col mini-box" id="ai" src="https://res.cloudinary.com/vit2/image/upload/c_scale,h_240,w_210/v1663565958/IMG_20220919_110011_pcrbmr.jpg" />
+                      <img class="col mini-box" id="bi" src="https://res.cloudinary.com/vit2/image/upload/c_scale,h_240,w_210/v1663565958/IMG_20220919_110011_pcrbmr.jpg" />
+                     
                 </div>
+                <!-- </center> -->
+                
             </div>
+           
         </div>
         <br>
         <br>
@@ -375,4 +384,92 @@
     </div>
     <script src="script.js"></script>
 </body>
+
+ <script>
+        let r=screen.width;
+    let y,today;
+    console.log(r);
+    let count=0;
+    if(r>768)
+    {
+        document.getElementById("ne").style.display="none";
+    }
+    else if(r<=768)
+    {
+        document.getElementById("qi").style.display="none";
+        document.getElementById("ai").style.display="none";
+        document.getElementById("bi").style.display="none";
+        document.getElementById("ne").style.display="inline";
+        document.getElementById("hi").style.display="none";
+       setInterval(function()
+       {
+        today=new Date();
+        y=today.getSeconds();
+        if(y%5==0)
+        {
+            
+          console.log(y);
+           if(count==1)
+            {
+                document.getElementById("hi").style.display="inline";
+                document.getElementById("ne").style.display="none";
+                document.getElementById("ai").style.display="none";
+                document.getElementById("bi").style.display="none";
+                document.getElementById("qi").style.display="none";
+                console.log("Count"+count);
+                count=count+1;
+            }
+            else if(count==2)
+            {
+                document.getElementById("ai").style.display="inline";
+                document.getElementById("hi").style.display="none";
+                document.getElementById("qi").style.display="none";
+                document.getElementById("bi").style.display="none";
+                document.getElementById("ne").style.display="none";
+                console.log("Count"+count);
+                count=count+1;
+            }
+            else if(count==0)
+            {
+                document.getElementById("ne").style.display="inline";
+                document.getElementById("qi").style.display="none";
+                document.getElementById("ai").style.display="none";
+                document.getElementById("bi").style.display="none";
+                document.getElementById("hi").style.display="none";
+                console.log("Count"+count);
+                count=count+1;
+            }
+            else if(count==3)
+            {
+                document.getElementById("bi").style.display="inline";
+                document.getElementById("hi").style.display="none";
+                document.getElementById("ai").style.display="none";
+                document.getElementById("qi").style.display="none";
+                document.getElementById("ne").style.display="none";
+                console.log("Count"+count);
+                count=count+1;
+            }
+            else if(count==4)
+            {
+                document.getElementById("qi").style.display="inline";
+                document.getElementById("hi").style.display="none";
+                document.getElementById("ai").style.display="none";
+                document.getElementById("ne").style.display="none";
+                document.getElementById("bi").style.display="none";
+                console.log("Count"+count);
+                count=0;
+                
+                
+            }
+            
+           
+            
+            
+        }
+       
+    
+    },1000);
+}
+        
+</script> 
 </html>
