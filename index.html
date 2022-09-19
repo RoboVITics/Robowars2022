@@ -11,6 +11,10 @@
     <link rel="stylesheet" href="Styles/Judges.css">
     <link rel="stylesheet" href="Styles/Publication.css">
     <link rel="stylesheet" href="Styles/contactUs.css">
+    <link rel="stylesheet" href="Styles/sponsors.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./Styles/AboutUs.css">
+    <link rel="stylesheet" href="Styles/landingLogo.css">
     <script src="main.js"></script>
 </head>
 <body>
@@ -19,6 +23,7 @@
         <div class="logo">
             <img src="https://res.cloudinary.com/db4f0fmy7/image/upload/v1662832110/robowars/RoboVITics-Logo_2_qm9wch.png" alt="">
         </div>
+
         <ul>
             <li><a class="active" href="">Home</a></li>
             <li><a href="">About Us</a></li>
@@ -26,8 +31,43 @@
             <li><a href="">FAQ</a></li>
             <li><a href="">Contact Us</a></li>
           </ul>
+          <div class="logo2">
+            <img src="https://res.cloudinary.com/dpxlluhmw/image/upload/v1663525261/Gravitas_1_2_vh01l1.png" alt="">
+        </div>
        </div>
+        
     </div>
+
+    
+
+    
+    <div class="topnav">
+        <a href="#home" class="active">
+            <div class="logo">
+                <img src="https://res.cloudinary.com/db4f0fmy7/image/upload/v1662832110/robowars/RoboVITics-Logo_2_qm9wch.png" alt="">
+            </div>
+        </a>
+        <div id="myLinks">
+            <a href="">Home</a>
+            <a href="">About Us</a>
+            <a href="">Timeline</a>
+            <a href="">FAQ</a>
+            <a href="">Contact Us</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <script>
+        function myFunction() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+        </script>
     <div class="bottomLayer">
         <div class="firstLayer">
             <img src="https://res.cloudinary.com/robovitics/image/upload/v1662826704/Robowars2022/backgroundHeader_xab3sn.png" alt="">
@@ -83,11 +123,8 @@
                 </div>
             </div>
             <div class="headingBot">
-                <!-- <div class="smoke">
-                    <img src="https://res.cloudinary.com/robovitics/image/upload/v1662830553/Robowars2022/image-removebg-preview_1_nzqoh6.png" alt="">
-                </div> -->
                 <div class="bot">
-                    <img src="https://res.cloudinary.com/robovitics/image/upload/v1662830851/Robowars2022/fightr-removebg-preview_1_qwcfu3.png" alt="">
+                    <img src="https://res.cloudinary.com/robovitics/image/upload/v1663347319/Robowars2022/bot_1_qkt8us.png" alt="">
                 </div>
             </div>
         </div>
@@ -108,6 +145,9 @@
                 <button class="robowarsAbout">
                     <p>ROBOWARS</p>
                 </button>
+                <div class="roboviticsDescription">
+
+                </div>
                 <button class="roboviticsAbout">
                     <p>RoboVITics</p>
                 </button>
@@ -133,6 +173,14 @@
                 </div>
                 <img class="connectorA" src="https://res.cloudinary.com/robovitics/image/upload/v1662920273/Robowars2022/Vector_18_ob1ehx.png" alt="">
                 <div class="hexagon">
+                    <div id="matches">Matches</div>
+                    <div id="date1">1st April 2022</div>
+                    <div id="date2">2nd April 2022</div>
+                    <hr id="diff">
+                    <div id="team1"><!-- Enter team name here--></div>
+                    <div id="team2"><!-- Enter team name here--></div>
+                    <a id="prev" onclick="prev()">&#10094;</a>
+                    <a id="next" onclick="next()">&#10095;</a>
                     <img src="https://res.cloudinary.com/robovitics/image/upload/v1662918766/Robowars2022/Polygon_10_chnugz.png" alt="">
                 </div>
                 <img class="connectorB" src="https://res.cloudinary.com/robovitics/image/upload/v1662921224/Robowars2022/Vector_19_srwocu.png" alt="">
@@ -148,24 +196,29 @@
         </div>
         <div class="divider"></div>
         <div class="judgesPage">
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <div class="abouttopHeading">
+            <div class="abouttopHeading" id="judgeHeading">
                 <p>JUDGES</p>
                 <div class="abouttextDivider"></div>
             </div>
-            <div class="judgebox">
-                <div class="judge"> 
-                    <img class="judgeImg" src="https://res.cloudinary.com/robovitics/image/upload/v1661063581/Robovitics%20Site/BoardMembers/WhatsApp_Image_2022-08-15_at_12.53.07_PM_ga1vrm.jpg"> 
-                    <div class="info"> 
-                        <center> Wade Warren <br> Head of R&D <br> Robotics </center> 
-                    </div>
+            <div class="container">
+                <div class="outer circle">
+                    <div class="inner circle info">Adwyck Gupta <br> Vice Chairperson <br> Robovitics </div>
+                    <img class="inner circle" src="https://res.cloudinary.com/robovitics/image/upload/v1661063581/Robovitics%20Site/BoardMembers/WhatsApp_Image_2022-08-15_at_12.53.07_PM_ga1vrm.jpg">
+                        
                 </div>
-                <div class="judge"> <img class="judgeImg" src="https://res.cloudinary.com/robovitics/image/upload/v1661063581/Robovitics%20Site/BoardMembers/WhatsApp_Image_2022-08-15_at_12.53.07_PM_ga1vrm.jpg"> <div class="info"> <center> Wade Warren <br> Head of R&D <br> Robotics </center> </div></div>
-                <div class="judge"> <img class="judgeImg" src="https://res.cloudinary.com/robovitics/image/upload/v1661063581/Robovitics%20Site/BoardMembers/WhatsApp_Image_2022-08-15_at_12.53.07_PM_ga1vrm.jpg"> <div class="info"> <center> Wade Warren <br> Head of R&D <br> Robotics </center> </div></div>
+                <div class="outer circle">
+                    <div class="inner circle info">Adwyck Gupta <br> Vice Chairperson <br> Robovitics </div>
+                    <img class="inner circle" src="https://res.cloudinary.com/robovitics/image/upload/v1661063581/Robovitics%20Site/BoardMembers/WhatsApp_Image_2022-08-15_at_12.53.07_PM_ga1vrm.jpg">
+                        
+                </div>
+                <div class="outer circle">
+                    <div class="inner circle info">Adwyck Gupta <br> Vice Chairperson <br> Robovitics </div>
+                    <img class="inner circle" src="https://res.cloudinary.com/robovitics/image/upload/v1661063581/Robovitics%20Site/BoardMembers/WhatsApp_Image_2022-08-15_at_12.53.07_PM_ga1vrm.jpg">
+                </div>
+                <div class="outer circle">
+                    <div class="inner circle info">Adwyck Gupta <br> Vice Chairperson <br> Robovitics </div>
+                    <img class="inner circle" src="https://res.cloudinary.com/robovitics/image/upload/v1661063581/Robovitics%20Site/BoardMembers/WhatsApp_Image_2022-08-15_at_12.53.07_PM_ga1vrm.jpg">
+                </div>
             </div>
         </div>
 
@@ -309,7 +362,7 @@
                 </center>
             </div>
             <div class="mEmail">
-                <p style="font-size:larger">Email: robovitics@vit.ac.in</p>
+                <p style="font-size:larger;font-weight:bold;">Email: robovitics@vit.ac.in</p>
             </div>
         <div class="pageBody">
             
@@ -333,7 +386,7 @@
             </div>
             <div class="Contacts">
                 <div class="email">
-                    <p>Email: robovitics@vit.ac.in</p>
+                    <p style="font-weight:bold;">Email: robovitics@vit.ac.in</p>
                 </div>
                 <div class="clubContacts">
                     <ul>
@@ -344,7 +397,7 @@
                         
                       </ul> 
                       <ul>
-                        <li style="font-weight:700">Phone: (+91) 84910 92405</li>
+                        <li style="font-weight:700"><a style="color:white">Phone: (+91) 84910 92405</a></li>
                         <li style="font-weight:700">Adwyck Gupta</li>
                         <li>Vice Chairperson</li>
                         <li>Robovitics</li>
@@ -353,7 +406,7 @@
                 </div>
                 <div class="MobclubContacts">
                     <ul>
-                        <li style="font-weight:700">Phone: (+91) 9833548555</li>
+                        <li style="font-weight:700;"><a style="color:white">Phone: (+91) 9833548555</a></li>
                         <li style="font-weight:700">Akhil Mahesh</li>
                         <li>Chairperson</li>
                         <li>Robovitics</li>
