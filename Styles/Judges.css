@@ -1,30 +1,30 @@
 .judgesPage {
-    height: 100vh;
+    height: 70vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    font-size: medium;
   }
-/* Container which has 3 Judges */
+/* Container which has 4 Judges */
   .container{
     display: flex;
     flex-direction: row;
-    width: 80%;
+    width: 85%;
+
     justify-content: space-between;
-    /* border: 1px solid white; */
     margin: 5% auto;
 }
 
-
-/* Individual Judge Element Property */
+/* Individual Judge Element Property Start */
 .circle{
     border-radius: 50%;
 }
 
 .outer {
-    width:30vh;
-    height:30vh;
+    width: 28vmin;
+    height: 28vmin;
     position:relative;
     border: 5px solid #784afa;
 }
@@ -46,19 +46,22 @@
     justify-content: center;
 
     font-family: "Gilroy-Light";
-    font-size: 1em;
+    font-size: 15px;
     color: white;
 }
+/* Individual Judge Element Property End */
 
 /* Show the participants details when hovered over: */
 img.inner:hover{
-    display: none; 
+    display: flex; 
     opacity: 0;
-    transition: ease-in-out 1s;
+    transition: ease-in-out 0.5s;
+
 }
 
-@media (max-width: 768px) {
+/* MOBILE VIEW (TILL 768PX) */
 
+@media (max-width: 768px) {
     .judgesPage{
         height: 100vh;
         justify-content: center;
@@ -72,20 +75,68 @@ img.inner:hover{
         overflow-y: scroll;
         overflow-x: hidden;
     }
-
     ::-webkit-scrollbar {
         display: none;
     }
-
     .outer {
         margin-bottom: 12%;
     }
+    .info{
+        font-size: 0.7em;
+    }
+}
 
+/* SMALL LAPTOP VIEW (769 to 1000px) */
+
+@media (min-width: 769px) and (max-width: 1000px) {
+
+    .judgesPage{
+        height: 70vh;
+        justify-content: center;
+    }
+    .container{
+        margin-top: 6%;
+        width: 90%;
+        display: flex;
+    }
+    .outer {
+        /* margin-bottom: 12%; */
+        width: 22vmin;
+        height: 22vmin;
+    }
+    .info{
+        font-size: 0.8em;
+    }
+}
+
+@media (min-height: 760px) and (min-width:768px) and (max-width: 1500px){
+    #judgeHeading{
+        /**/
+        margin-bottom: -22%; /*CHANGE*/
+    }
+    .container{
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    .outer {
+        /* margin-bottom: 12%; */
+        width: 20vmin;
+        height: 20vmin;
+    }
     .info{
         font-size: 0.8em;
     }
 
-    img.inner:hover{
-        display: flex; 
+    @media (max-width:1000px) {
+        #judgeHeading {
+            margin-bottom: 0;
+        }
     }
 }
+
+@media (min-width: 1500px) {
+    .info{
+        font-size: 20px;
+    }    
+}
+
