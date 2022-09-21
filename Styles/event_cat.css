@@ -287,4 +287,8 @@
     .mySlides {
         margin-left: 25px;
     }
+    .mySlides,.mySlides2{
+      width: 270px;
+      height: 220px;
+    }
 }
