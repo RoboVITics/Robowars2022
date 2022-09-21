@@ -13,11 +13,12 @@
   }
   
   .publicationPage {
-    height: 100vh;
+    height: 120vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
     justify-content: space-evenly;
     background-color: transparent;
   }
@@ -30,7 +31,6 @@
     grid-column-gap: 2px;
     overflow: none;
     margin: 0%;
-    overflow: scroll;
   }
   
   .pubRow {
