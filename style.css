@@ -25,12 +25,11 @@ body {
 } */
 
 .navbar {
-  position: absolute;
+  position: fixed;
   width: fit-content;
   height: fit-content;
   background: #0d091d;
   display: flex;
-  /* glow on nav */
 
   box-shadow: -0.5rem .5rem 2.1875rem rgba(147, 126, 230, 0.1),
     .5rem -0.5rem 1.875rem rgba(147, 126, 230, 0.1),
@@ -63,7 +62,9 @@ body {
   overflow: hidden;
   background-color: #0d091d;
   position: fixed;
-  top: 0;
+  top: 0; /* Stay on top */
+  width: 100%; /* Full width */
+  transition: top 0.3s; 
   width: 65%;
   right:20%;
 }
@@ -235,7 +236,7 @@ body {
 
 .upperLayer {
   position: absolute;
-  height: 900vh;
+  height: 860vh;
   width: 100vw;
   background-color: transparent;
   z-index: 10;
@@ -245,7 +246,7 @@ body {
 
 @media only screen and (max-width: 768px) {
   .upperLayer {
-    height: 880vh;
+    height: 800vh;
   }
 }
 
@@ -258,6 +259,11 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+/* .topnav {
+  filter: blur(10px);
+  background-color: red;
+} */
 
 .headingTitle {
   width: 50%;

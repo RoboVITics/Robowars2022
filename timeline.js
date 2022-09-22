@@ -1,9 +1,8 @@
-const date1 = ["1st April 2022", "2nd April 2022", "3rd April 2022", "4th April 2022"];
-const date2 = ["2nd April 2022", "3rd April 2022", "4th April 2022", "5th April 2022"];
+const date1 = ["Coming Soon..."];
+const date2 = ["Stay Tuned..."];
 const team1 = [];
 const team2 = [];
 var len = date1.length;
-console.log(len);
 
 var i = 0;
 function next() {
