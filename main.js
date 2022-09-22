@@ -2,6 +2,22 @@
 var slideIndex = 0;
 showSlides();
 showSlides2();
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+function plusSlides2(n) {
+  showSlides2(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide2(n) {
+  showSlides2(slideIndex = n);
+}
 function showSlides() {
         var i;
         var slides = document.getElementsByClassName("mySlides");
@@ -27,27 +43,4 @@ function showSlides2() {
   }
   slides[slideIndex - 1].style.display = "block";
   setTimeout(showSlides2, 2000); // Change image every 2 seconds
-
-  const date1 = ["1st April 2022", "2nd April 2022", "3rd April 2022", "4th April 2022"];
-  const date2 = ["2nd April 2022", "3rd April 2022", "4th April 2022", "5th April 2022"];
-  const team1 = [];
-  const team2 = [];
-  var len = date1.length;
-  console.log(len);
-
-  var i = 0;
-  function next() {
-    if (i < len - 1) {
-      i = i + 1;
-      document.getElementById("date1").innerHTML = date1[i];
-      document.getElementById("date2").innerHTML = date2[i];
-    }
-  }
-  function prev() {
-    if (i > 0) {
-      i--;
-      document.getElementById("date1").innerHTML = date1[i];
-      document.getElementById("date2").innerHTML = date2[i];
-    }
-  }
 }

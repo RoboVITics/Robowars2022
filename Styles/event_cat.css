@@ -18,8 +18,10 @@
 /*for slide show*/
 .mySlides {
     display: none;
+    width: 450px;
+    height: 300px;
     margin-left: 40px;
-    margin-bottom: -7px;
+    margin-bottom: -4%;
     margin-top: 20px;
 
   }
@@ -107,8 +109,10 @@
 /*for slide show*/
 .mySlides2 {
     display: none;
+    width: 450px;
+    height: 300px;
     margin-left: 40px;
-    margin-bottom: -7px;
+    margin-bottom: -4%;
     margin-top: 20px;
 }
 
@@ -282,5 +286,9 @@
 
     .mySlides {
         margin-left: 25px;
+    }
+    .mySlides,.mySlides2{
+      width: 270px;
+      height: 220px;
     }
 }
