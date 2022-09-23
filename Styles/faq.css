@@ -1,4 +1,5 @@
 /*FAQ STARTS*/
+/*Contributed to by Kris*/
 @import url('http://fonts.cdnfonts.com/css/gilroy-bold');
 .faqpage {
     height: 80vh;
@@ -125,6 +126,61 @@
     transform: rotateY(180deg);
     transition: transform 0.5s;
 }
+#row1 #back{
+    display: none;
+}
+#row1:hover #front{
+    display: none;
+}
+#row1:hover #back{
+    display: flex;
+}
+#row2 #back{
+    display: none;
+}
+#row2:hover #front{
+    display: none;
+}
+#row2:hover #back{
+    display: flex;
+}
+#row3 #back{
+    display: none;
+}
+#row3:hover #front{
+    display: none;
+}
+#row3:hover #back{
+    display: flex;
+}
+#row5 #back{
+    display: none;
+}
+#row5:hover #front{
+    display: none;
+}
+#row5:hover #back{
+    display: flex;
+}
+#row6 #back{
+    display: none;
+}
+#row6:hover #front{
+    display: none;
+}
+#row6:hover #back{
+    display: flex;
+}
+#row7 #back{
+    display: none;
+}
+#row7:hover #front{
+    display: none;
+}
+#row7:hover #back{
+    display: flex;
+}
+
 
 #front,
 #back {
