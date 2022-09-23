@@ -1,3 +1,13 @@
+import "./styles/main.css";
+import "./styles/AboutUs.css";
+import "./styles/contactUs.css";
+import "./styles/event_cat.css";
+import "./styles/faq.css";
+import "./styles/Judges.css";
+import "./styles/landingLogo.css";
+import "./styles/Publication.css";
+import "./styles/sponsors.css"
+
 const date1 = ["Coming Soon..."];
 const date2 = ["Stay Tuned..."];
 const team1 = [];
