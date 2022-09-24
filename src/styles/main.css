@@ -16,7 +16,6 @@ body {
   overflow-x: hidden;
   width: 100vw;
   background-color: #0d091d;
-  background-color: #0d091d;
 }
 
 
@@ -236,28 +235,37 @@ body {
 
 .upperLayer {
   position: absolute;
-  height: 860vh;
+  /* height: 860vh; */
   width: 100vw;
   background-color: transparent;
   z-index: 10;
   display: flex;
   flex-direction: column;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
-@media only screen and (max-width: 768px) {
-  .upperLayer {
-    height: 860vh;
-  }
-}
+
 
 
 
 .topHeading {
   height: 120vh;
   width: 100%;
+  min-height: 1000px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .upperLayer {
+    height: 860vh;
+  }
+
+  .topHeading {
+    min-height: 400px;
+  }
 }
 
 /* .topnav {
@@ -529,6 +537,7 @@ body {
 .eventCategories {
   height: 100vh;
   width: 100%;
+  min-height: 800px;
   background-color: transparent;
 }
 
@@ -551,6 +560,7 @@ body {
 
 .timeLinePage {
   height: 175vh;
+  min-height: 1200px;
   width: 100%;
   /* background-color: red; */
   display: flex;
