@@ -1,6 +1,5 @@
 /public
 /dist
 /node_modules
-*.png
 .DS_Store
 settings.json
