@@ -3,6 +3,7 @@
     height: 100vh;
     display: flex;
     align-items: center;
+    min-height: 600px;
 
 }
 
@@ -208,6 +209,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 50px;
 }
 
 .kgHeading p{
@@ -230,7 +232,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    min-height: 400px;
 
 }
 

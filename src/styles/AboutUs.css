@@ -1,6 +1,7 @@
 .aboutPage {
   height: 90vh;
   width: 100%;
+  min-height: 800px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,6 +36,7 @@
 .DescriptionDiv
 {
   height: 30vh;
+  min-height: 200px;
   width: 80%;
   border: 3px solid #9E87FB;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -110,6 +112,7 @@
 @media only screen and (max-width: 768px) {
   .aboutPage {
     height: 60vh;
+    min-height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
