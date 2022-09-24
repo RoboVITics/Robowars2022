@@ -191,11 +191,13 @@
 }
 #front{
     font-family:'Gilroy-Medium', sans-serif;
-    font-size: 100%;
+    font-size: 20px;
+    padding: 15px;
 }
 #back{
     font-family:'Gilroy-Regular', sans-serif;
-    font-size: 100%;
+    font-size: 20px;
+    padding: 30px;
     /*commit*/
 }
 #back {
