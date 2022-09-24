@@ -119,6 +119,7 @@ body {
 
 .bottomLayer {
   width: 100vw;
+  overflow-x: hidden;
   height: 500vh;
   position: absolute;
   z-index: 1;
