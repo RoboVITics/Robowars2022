@@ -278,6 +278,9 @@
         width: 80vw;
         height: 40vh;
     }
+    #event-line{
+      width: 81%;
+    }
 
     
     /* #header-faq {

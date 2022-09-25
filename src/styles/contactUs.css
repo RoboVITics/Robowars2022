@@ -11,6 +11,7 @@
     }
 
     .contactPage .header-contactus .line {
+        display: none;
         border: 0.1875rem solid #ab93d2;
     }
     .contactPage .header-contactus .line1 {
