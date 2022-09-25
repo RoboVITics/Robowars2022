@@ -25,10 +25,9 @@
 
 .sponsorPage .header-sponsorPage .line {
     margin-top: -20px;
-    width: 250px;
+    width: 21%;
     height: 0px;
-
-    border: 1px solid #ab93d2;
+    border: 0.1875rem solid #ab93d2;
     /* purple neon */
 
     box-shadow: -5px 5px 20px rgba(209, 180, 243, 0.07),

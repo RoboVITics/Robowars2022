@@ -12,13 +12,13 @@
 
     .contactPage .header-contactus .line {
         display: none;
+        border: 0.1875rem solid #ab93d2;
     }
     .contactPage .header-contactus .line1 {
         margin-top: -20px;
         width: 47%;
         height: 0px;
-      
-        border: 1px solid #ab93d2;
+        border: 0.1875rem solid #ab93d2;
         /* purple neon */
       
         box-shadow: -5px 5px 20px rgba(209, 180, 243, 0.07),
@@ -150,10 +150,10 @@
     }
     .contactPage .header-contactus .line {
       margin-top: -20px;
-      width: 20%;
-      height: 0px;
+      width: 23%;
+      height: 0%;
     
-      border: 1px solid #ab93d2;
+      border: 0.1875rem solid #ab93d2;
       /* purple neon */
     
       box-shadow: -5px 5px 20px rgba(209, 180, 243, 0.07),
