@@ -47,15 +47,15 @@
 }
 
 .gravCLogo {
-    width: 30%;
-    height: 30%;
+    width: 40%;
+    height: calc(60% + 40px);
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .gravCLogo img {
-    height: 80%;
+    width: 90%;
 }
 
 .gravCBody {
@@ -89,7 +89,9 @@
     }
 
     .gravCLogo {
-        height: 12%;
+        height: 15%;
+        width:80%;
+       
     }
 
     .gravCBody {
