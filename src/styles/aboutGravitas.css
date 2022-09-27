@@ -1,0 +1,99 @@
+.aboutGravitasPage {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.gravTitle {
+    height: 8%;
+    /* width: 20%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Archivo";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.5rem;
+  line-height: 3.375rem;
+  text-align: center;
+  color: #d2b6ff;
+  text-shadow: 0.25rem 0.25rem 0.625rem rgba(120, 74, 250, 0.4),
+    -0.25rem -0.25rem 0.625rem rgba(120, 74, 250, 0.3);
+    /* background-color: red; */
+}
+
+.gravTitle p {
+    margin: 0px;
+    padding: 0px;
+}
+
+.gravDiv {
+    height: 2px;
+    width: 100%;
+    background-color: #ab93d2;
+    border: 0.1875rem solid #ab93d2;
+}
+
+.gravContent {
+    height: 50%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.gravCLogo {
+    width: 30%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gravCLogo img {
+    height: 80%;
+}
+
+.gravCBody {
+    height: 60%;
+    width: calc(40% - 40px);
+    padding: 20px;
+    /* background: rgba(120, 74, 250, 0.4); */
+    border: 3px solid #9e87fb;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+}
+
+@media only screen and (max-width: 768px) {
+
+    /* .aboutGravitasPage {
+        height: 120vh;
+    } */
+
+    .gravTitle {
+        display: none;
+    }
+
+    .gravContent {
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .gravCLogo {
+        height: 12%;
+    }
+
+    .gravCBody {
+        width: 80%;
+        height: 40%;
+    }
+}

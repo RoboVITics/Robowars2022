@@ -19,6 +19,10 @@ body {
 }
 
 
+#graviLog {
+  display: none;
+}
+
 /* #li {
   height: 400px;
 } */
@@ -261,8 +265,16 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
+
+  #roboLog {
+    display: none;
+  }
+  #graviLog {
+    display: flex;
+    height: 30px;
+  }
   .upperLayer {
-    height: 860vh;
+    /* height: 860vh; */
   }
 
   .topHeading {
