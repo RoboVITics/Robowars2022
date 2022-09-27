@@ -273,7 +273,7 @@ body {
     height: 30px;
   }
   .upperLayer {
-    height: 860vh;
+    /* height: 860vh; */
   }
 
   .topHeading {
