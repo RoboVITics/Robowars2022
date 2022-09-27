@@ -494,9 +494,24 @@ body {
   
 }
 
+.organisers {
+  height: 25%;
+  width: 80%;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.organGravLogo {
+  width: 50%;
+}
+
 .robovlogo {
   width: 40%;
 }
+
+
 
 .robowlogo {
   width: 80%;
