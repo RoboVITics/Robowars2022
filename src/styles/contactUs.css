@@ -173,6 +173,11 @@
     .contactPage .pageBody .roboLogo {
       margin-left: 5%;
       display: flex;
+      align-items:flex-start;
+    }
+    .contactPage .pageBody .roboLogo .mainLogo{
+      height: 80%;
+      align-self: center;
     }
     
     .contactPage .pageBody .roboLogo h1 {
@@ -194,6 +199,7 @@
     }
     .contactPage .pageBody .Contacts {
       display: block;
+      margin-left: -12%;
     }
     .contactPage .pageBody .Contacts .email {
       white-space: nowrap;
@@ -226,9 +232,12 @@
       font-family: "Gilroy-Light";
       font-style: normal;
       font-weight: 300;
-      font-size: 24px;
+      font-size: 22px;
       line-height: 28px;
       text-align: center;
       color: white;
     }
     
+    .contactPage .pageBody .Contacts .clubContacts li a img{
+      display: none;
+    }
