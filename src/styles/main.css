@@ -19,6 +19,10 @@ body {
 }
 
 
+#graviLog {
+  display: none;
+}
+
 /* #li {
   height: 400px;
 } */
@@ -261,8 +265,16 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
+
+  #roboLog {
+    display: none;
+  }
+  #graviLog {
+    display: flex;
+    height: 40px;
+  }
   .upperLayer {
-    height: 860vh;
+    /* height: 860vh; */
   }
 
   .topHeading {
@@ -486,9 +498,24 @@ body {
   
 }
 
+.organisers {
+  height: 25%;
+  width: 80%;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.organGravLogo {
+  width: 50%;
+}
+
 .robovlogo {
   width: 40%;
 }
+
+
 
 .robowlogo {
   width: 80%;

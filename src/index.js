@@ -7,6 +7,7 @@ import "./styles/Judges.css";
 import "./styles/landingLogo.css";
 import "./styles/Publication.css";
 import "./styles/sponsors.css";
+import "./styles/aboutGravitas.css";
 
 const date1 = ["Coming Soon..."];
 const date2 = ["Stay Tuned..."];
