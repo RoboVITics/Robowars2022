@@ -1,243 +1,234 @@
 
-@media screen and (max-width: 481px){
+@media screen and (max-width: 481px){ 
+ 
+  .contactPage { 
+    height: 150vh; 
+    width: 100%; 
+   /* display: none;   */ 
+  } 
+  .contactPage .header-contactus .mainHeader{ 
+      font-size:30px; 
+  } 
 
-    .contactPage {
-      height: 150vh;
-      width: 100%;
-     /* display: none;   */
-    }
-    .contactPage .header-contactus .mainHeader{
-        font-size:30px;
-    }
-
-    .contactPage .header-contactus .line {
-        display: none;
-    }
-    .contactPage .header-contactus .line1 {
-        margin-top: -20px;
-        width: 47%;
-        height: 0px;
-      
-        border: 1px solid #ab93d2;
-        /* purple neon */
-      
-        box-shadow: -5px 5px 20px rgba(209, 180, 243, 0.07),
-          5px -5px 20px rgba(209, 180, 243, 0.07),
-          -5px -5px 20px rgba(213, 184, 247, 0.3),
-          5px 5px 20px rgba(209, 180, 243, 0.3),
-          inset 1px 1px 4px rgba(213, 184, 247, 0.15),
-          inset -1px -1px 2px rgba(209, 180, 243, 0.2);
-        /* transform: rotate(-0.2deg); */
-      }
-    
-    
-    .contactPage .pageBody {
-      margin-top: 3.5%;
-      display:flex;
-      flex-direction: row;
-      
-    }
-    .contactPage .pageBody .roboLogo {
-        align-self: center;
-       
-    }
-    .contactPage .pageBody .roboLogo h1 {
-        display: none;
-      }
-      .contactPage .pageBody .roboLogo img {
-        margin-left: 10%;
-        height: auto;
-        width: 80%;
-      }
-
-    .contactPage .mEmail {
-        white-space: nowrap;
-        color: white;
-        font-weight: bold;
-        font-size: large;
-      }
-    .contactPage .mEmail p {
-      
-      font-family: "Gilroy-Light";
-      font-style: normal;
-      font-weight: 300;
-      font-size: 30px;
-      line-height: 35px;
-      text-align: center;
-    
-      color: #ffffff;
-    }
-    .contactPage .pageBody .Contacts {
-        margin-right: 10%;
-    }
-    .contactPage .pageBody .Contacts .email {
-        display: none;
-    }
-    .contactPage .pageBody .roboLogo ul{
-        display: none;
-      }
-      .contactPage .pageBody .roboLogo li {
-        display: none;
-      }
-      .contactPage .pageBody .Contacts .clubContacts {
-        display: none;
-      }
-      .contactPage .pageBody .Contacts .clubContacts ul {
-        display: none;
-    }
-    .contactPage .pageBody .Contacts .MobclubContacts ul {
-        
-        text-align: center;
-        list-style-type: none;
-        white-space: nowrap;
-        color: white;
-    }
-    .contactPage .pageBody .Contacts .MobclubContacts li {
-        font-family: "Gilroy-Light";
-        font-style: normal;
-        font-weight: 300;
-        font-size: 14px;
-        line-height: 18px;
-        text-align: center;
-        color: white;
-      }
-      .contactPage .mobSocial li{
-        align-self: center;
-      }
-      .contactPage .mobSocial a img {
-        height:auto; 
-        width:30px;
-
-      }
-
-    }
-    @media screen and (min-width: 482px){
-        .contactPage .mEmail {
-            display: none;
-        }
-        .contactPage .pageBody .Contacts .MobclubContacts {
-            display: none;
-        }
-        .contactPage .mobSocial img{
-            display: none;
-        }
-        .contactPage .header-contactus .line1 {
-            display: none;
-        }
-
-    }
-
-    .contactPage {
-      height: 70vh;
-      width: 100%;
-      /* display: none; */
-    }
-    .contactPage .header-contactus {
-      align-items: center;
-    }
-    .contactPage .header-contactus h1 {
-      font-family: "Archivo";
-      font-style: normal;
-      font-weight: 600;
-      font-size: 50px;
-      /* line-height: 54px; */
-      text-align: center;
-    
-      color: #d2b6ff;
-    
-      text-shadow: 4px 4px 10px rgba(120, 74, 250, 0.4),
-        -4px -4px 10px rgba(120, 74, 250, 0.3);
-    }
-    .contactPage .header-contactus .line {
-      margin-top: -20px;
-      width: 20%;
-      height: 0px;
-    
-      border: 1px solid #ab93d2;
-      /* purple neon */
-    
-      box-shadow: -5px 5px 20px rgba(209, 180, 243, 0.07),
-        5px -5px 20px rgba(209, 180, 243, 0.07),
-        -5px -5px 20px rgba(213, 184, 247, 0.3),
-        5px 5px 20px rgba(209, 180, 243, 0.3),
-        inset 1px 1px 4px rgba(213, 184, 247, 0.15),
-        inset -1px -1px 2px rgba(209, 180, 243, 0.2);
-      /* transform: rotate(-0.2deg); */
-    }
-    
-    .contactPage .pageBody {
-      margin-top: 3.5%;
-      display: flex;
-      justify-content: flex-start;
-    }
-    .contactPage .pageBody .roboLogo {
-      margin-left: 5%;
-      display: flex;
-      align-items:flex-start;
-    }
-    .contactPage .pageBody .roboLogo .mainLogo{
-      height: 80%;
-      align-self: center;
-    }
-    
-    .contactPage .pageBody .roboLogo h1 {
-      margin-top: 15%;
-      color: white;
-      font-family: "Montserrat";
-      font-style: normal;
-      margin-left: 7%;
-      font-size: 60px;
-    }
-    .contactPage .pageBody .roboLogo ul{
-      list-style-type: none;
-      white-space: nowrap;
-      margin-left: 0px;
-    }
-    .contactPage .pageBody .roboLogo li {
-      margin: 2.5%;
-      display: inline;
-    }
-    .contactPage .pageBody .Contacts {
-      display: block;
-      margin-left: -12%;
-    }
-    .contactPage .pageBody .Contacts .email {
-      white-space: nowrap;
-      margin-left: 50%;
-      color: white;
-    }
+  .contactPage .header-contactus .line { 
+      display: none; 
+  } 
+  .contactPage .header-contactus .line1 { 
+      margin-top: -20px; 
+      width: 47%; 
+      height: 0px; 
+     
+      border: 1px solid #ab93d2; 
+      /* purple neon */ 
+     
+      box-shadow: -5px 5px 20px rgba(209, 180, 243, 0.07), 
+        5px -5px 20px rgba(209, 180, 243, 0.07), 
+        -5px -5px 20px rgba(213, 184, 247, 0.3), 
+        5px 5px 20px rgba(209, 180, 243, 0.3), 
+        inset 1px 1px 4px rgba(213, 184, 247, 0.15), 
+        inset -1px -1px 2px rgba(209, 180, 243, 0.2); 
+      /* transform: rotate(-0.2deg); */ 
+    } 
    
-    .contactPage .pageBody .Contacts .email p {
-      font-family: "Gilroy-Light";
-      font-style: normal;
-      font-weight: 300;
-      font-size: 30px;
-      line-height: 35px;
-      text-align: center;
-    
-      color: #ffffff;
-    }
-    .contactPage .pageBody .Contacts .clubContacts {
-      display: flex;
-      margin-left: 30%;
-    }
-    .contactPage .pageBody .Contacts .clubContacts ul {
-      text-align: center;
-    
-      list-style-type: none;
-      white-space: nowrap;
-      color: white;
-    }
-    .contactPage .pageBody .Contacts .clubContacts li {
-      font-family: "Gilroy-Light";
-      font-style: normal;
-      font-weight: 300;
-      font-size: 22px;
-      line-height: 28px;
-      text-align: center;
-      color: white;
-    }
-    
-    .contactPage .pageBody .Contacts .clubContacts li a img{
-      display: none;
-    }
+   
+  .contactPage .pageBody { 
+    margin-top: 3.5%; 
+    display:flex; 
+    flex-direction: row; 
+     
+  } 
+  .contactPage .pageBody .roboLogo { 
+      align-self: center; 
+      
+  } 
+  .contactPage .pageBody .roboLogo h1 { 
+      display: none; 
+    } 
+    .contactPage .pageBody .roboLogo img { 
+      margin-left: 10%; 
+      height: auto; 
+      width: 80%; 
+    } 
+
+  .contactPage .mEmail { 
+      white-space: nowrap; 
+      color: white; 
+      font-weight: bold; 
+      font-size: large; 
+    } 
+  .contactPage .mEmail p { 
+     
+    font-family: "Gilroy-Light"; 
+    font-style: normal; 
+    font-weight: 300; 
+    font-size: 30px; 
+    line-height: 35px; 
+    text-align: center; 
+   
+    color: #ffffff; 
+  } 
+  .contactPage .pageBody .Contacts { 
+      margin-right: 10%; 
+  } 
+  .contactPage .pageBody .Contacts .email { 
+      display: none; 
+  } 
+  .contactPage .pageBody .roboLogo ul{ 
+      display: none; 
+    } 
+    .contactPage .pageBody .roboLogo li { 
+      display: none; 
+    } 
+    .contactPage .pageBody .Contacts .clubContacts { 
+      display: none; 
+    } 
+    .contactPage .pageBody .Contacts .clubContacts ul { 
+      display: none; 
+  } 
+  .contactPage .pageBody .Contacts .MobclubContacts ul { 
+       
+      text-align: center; 
+      list-style-type: none; 
+      white-space: nowrap; 
+      color: white; 
+  } 
+  .contactPage .pageBody .Contacts .MobclubContacts li { 
+      font-family: "Gilroy-Light"; 
+      font-style: normal; 
+      font-weight: 300; 
+      font-size: 14px; 
+      line-height: 18px; 
+      text-align: center; 
+      color: white; 
+    } 
+    .contactPage .mobSocial li{ 
+      align-self: center; 
+    } 
+    .contactPage .mobSocial a img { 
+      height:auto;  
+      width:30px; 
+
+    } 
+
+  } 
+  @media screen and (min-width: 482px){ 
+      .contactPage .mEmail { 
+          display: none; 
+      } 
+      .contactPage .pageBody .Contacts .MobclubContacts { 
+          display: none; 
+      } 
+      .contactPage .mobSocial img{ 
+          display: none; 
+      } 
+      .contactPage .header-contactus .line1 { 
+          display: none; 
+      } 
+
+  } 
+
+  .contactPage { 
+    height: 70vh; 
+    width: 100%; 
+    /* display: none; */ 
+  } 
+  .contactPage .header-contactus { 
+    align-items: center; 
+  } 
+  .contactPage .header-contactus h1 { 
+    font-family: "Archivo"; 
+    font-style: normal; 
+    font-weight: 600; 
+    font-size: 50px; 
+    /* line-height: 54px; */ 
+    text-align: center; 
+   
+    color: #d2b6ff; 
+   
+    text-shadow: 4px 4px 10px rgba(120, 74, 250, 0.4), 
+      -4px -4px 10px rgba(120, 74, 250, 0.3); 
+  } 
+  .contactPage .header-contactus .line { 
+    margin-top: -20px; 
+    width: 20%; 
+    height: 0px; 
+   
+    border: 1px solid #ab93d2; 
+    /* purple neon */ 
+   
+    box-shadow: -5px 5px 20px rgba(209, 180, 243, 0.07), 
+      5px -5px 20px rgba(209, 180, 243, 0.07), 
+      -5px -5px 20px rgba(213, 184, 247, 0.3), 
+      5px 5px 20px rgba(209, 180, 243, 0.3), 
+      inset 1px 1px 4px rgba(213, 184, 247, 0.15), 
+      inset -1px -1px 2px rgba(209, 180, 243, 0.2); 
+    /* transform: rotate(-0.2deg); */ 
+  } 
+   
+  .contactPage .pageBody { 
+    margin-top: 3.5%; 
+    display: flex; 
+    justify-content: flex-start; 
+  } 
+  .contactPage .pageBody .roboLogo { 
+    margin-left: 5%; 
+    display: flex; 
+  } 
+   
+  .contactPage .pageBody .roboLogo h1 { 
+    margin-top: 15%; 
+    color: white; 
+    font-family: "Montserrat"; 
+    font-style: normal; 
+    margin-left: 7%; 
+    font-size: 60px; 
+  } 
+  .contactPage .pageBody .roboLogo ul{ 
+    list-style-type: none; 
+    white-space: nowrap; 
+    margin-left: 0px; 
+  } 
+  .contactPage .pageBody .roboLogo li { 
+    margin: 2.5%; 
+    display: inline; 
+  } 
+  .contactPage .pageBody .Contacts { 
+    display: block; 
+  } 
+  .contactPage .pageBody .Contacts .email { 
+    white-space: nowrap; 
+    margin-left: 50%; 
+    color: white; 
+  } 
+  
+  .contactPage .pageBody .Contacts .email p { 
+    font-family: "Gilroy-Light"; 
+    font-style: normal; 
+    font-weight: 300; 
+    font-size: 30px; 
+    line-height: 35px; 
+    text-align: center; 
+   
+    color: #ffffff; 
+  } 
+  .contactPage .pageBody .Contacts .clubContacts { 
+    display: flex; 
+    margin-left: 30%; 
+  } 
+  .contactPage .pageBody .Contacts .clubContacts ul { 
+    text-align: center; 
+   
+    list-style-type: none; 
+    white-space: nowrap; 
+    color: white; 
+  } 
+  .contactPage .pageBody .Contacts .clubContacts li { 
+    font-family: "Gilroy-Light"; 
+    font-style: normal; 
+    font-weight: 300; 
+    font-size: 24px; 
+    line-height: 28px; 
+    text-align: center; 
+    color: white; 
+  } 
+  
