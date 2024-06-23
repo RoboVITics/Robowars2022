@@ -388,7 +388,9 @@ body {
 }
 @media only screen and (max-width: 1000px) {
 
-
+  .startbox{
+    scale: 0.9;
+  }
   #box {
     justify-items: center;
   /* display: grid; */
@@ -459,15 +461,12 @@ body {
     flex-direction: column;
   }
   
-  .topnav {
+  .topnav .active{
     margin-top: -10%;
-    overflow: hidden;
-    background-color: #0D091D;
-    position: relative;
   }
-  
   .topnav #myLinks {
     display: none;
+    list-style: none;
   }
   
   .topnav a {
@@ -495,7 +494,6 @@ body {
     background-color: #0D091D;
     color: white;
   }
-  
 }
 
 .organisers {
@@ -616,7 +614,7 @@ body {
   margin: 0px;
   color: #d2b6ff;
   font-size: 50px;
-  border: 1px solid #151030;
+  border-bottom: 1px solid #151030;
   text-shadow: 4px 4px 10px rgba(120, 74, 250, 0.4),
     -4px -4px 10px rgba(120, 74, 250, 0.3);
 }
