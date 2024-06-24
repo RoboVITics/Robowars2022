@@ -126,6 +126,60 @@
     transform: rotateY(180deg);
     transition: transform 0.5s;
 }
+#row1 #back{
+    display: none;
+}
+#row1:hover #front{
+    display: none;
+}
+#row1:hover #back{
+    display: flex;
+}
+#row2 #back{
+    display: none;
+}
+#row2:hover #front{
+    display: none;
+}
+#row2:hover #back{
+    display: flex;
+}
+#row3 #back{
+    display: none;
+}
+#row3:hover #front{
+    display: none;
+}
+#row3:hover #back{
+    display: flex;
+}
+#row5 #back{
+    display: none;
+}
+#row5:hover #front{
+    display: none;
+}
+#row5:hover #back{
+    display: flex;
+}
+#row6 #back{
+    display: none;
+}
+#row6:hover #front{
+    display: none;
+}
+#row6:hover #back{
+    display: flex;
+}
+#row7 #back{
+    display: none;
+}
+#row7:hover #front{
+    display: none;
+}
+#row7:hover #back{
+    display: flex;
+}
 
 #front,
 #back {
@@ -137,11 +191,13 @@
 }
 #front{
     font-family:'Gilroy-Medium', sans-serif;
-    font-size: 100%;
+    font-size: 20px;
+    padding: 15px;
 }
 #back{
     font-family:'Gilroy-Regular', sans-serif;
-    font-size: 100%;
+    font-size: 20px;
+    padding: 30px;
     /*commit*/
 }
 #back {
