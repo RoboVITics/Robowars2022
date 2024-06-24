@@ -265,16 +265,12 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
-
   #roboLog {
     display: none;
   }
   #graviLog {
     display: flex;
     height: 40px;
-  }
-  .upperLayer {
-    /* height: 860vh; */
   }
 
   .topHeading {
@@ -385,6 +381,7 @@ body {
   .topnav {
     display: none;
   }
+  
 }
 @media only screen and (max-width: 1000px) {
 
@@ -464,11 +461,9 @@ body {
   .topnav .active{
     margin-top: -10%;
   }
-  .topnav #myLinks {
-    display: none;
-    list-style: none;
+  .icon{
+    z-index: 9999999999999999;
   }
-  
   .topnav a {
     color: white;
     padding: 14px 16px;
@@ -480,7 +475,7 @@ body {
   .topnav a.icon {
     background: #0D091D;
     display: block;
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 0;
   }
@@ -493,6 +488,17 @@ body {
   .active {
     background-color: #0D091D;
     color: white;
+  }
+  .topnav #myLinks {
+    display: none;
+    list-style: none;
+    position: fixed;
+    z-index: 9999999999999999;
+    width: 100%;
+    top: 0;
+  }
+  .topnav #myLinks a{
+    background: rgba(13, 9, 29, 0.7);
   }
 }
 
@@ -816,4 +822,23 @@ body {
 #closing {
   position: relative;
   top: -15%;
+}
+
+.navbar{
+  z-index: 99999999999999999999999999999999;
+}
+.upperLayer,.bottomLayer{
+  left: 0;
+}
+.vsc-initialized{
+  margin: 0;
+  overflow-x: hidden;
+}
+.headingTitleContent{
+  padding-top: -200px;
+  padding-bottom: 10px;
+}
+.headingBot{
+  padding-top: -200px;
+  padding-bottom: 10px;
 }
