@@ -1,17 +1,7 @@
 {
-  "name": "robowars2024",
-  "version": "1.1.0",
-
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/RoboVITics/Robowars2022.git"
-  },
-  "author": "HenitChobisa",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/RoboVITics/Robowars2022/issues"
-  },
-  "homepage": "https://github.com/RoboVITics/Robowars2022#readme",
+  "name": "robowars",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
     "@mediapipe/tasks-vision": "^0.10.15",
     "@react-three/drei": "^9.112.0",
