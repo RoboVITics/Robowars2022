@@ -1,0 +1,145 @@
+.cont {
+  display: flex;
+  min-height: 60%;
+  justify-content: space-between;
+  margin: 80px 50px;
+  gap: 20px;
+}
+
+.card {
+  width: 80vw;
+  background-color: black;
+  transition: all 0.5s ease-in-out; /* Added transition for smooth animation */
+  position: relative;
+  flex-shrink: 0;
+  border-radius: 50px;
+  padding: 30px;
+  border: solid white 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.5px solid #d64e2f;
+  min-width: 100px;
+  opacity: 0; /* Start with invisible cards */
+  transform: translateY(100px); /* Start with cards slightly off-screen */
+}
+
+.card.scroll-trigger {
+  opacity: 1; /* Make cards visible when in view */
+  transform: translateY(0); /* Bring cards into their normal position */
+}
+
+@media(max-width: 706px) {
+  .expanded-content {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media(max-width: 1000px) {
+  .cont {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .expanded-image {
+    height: auto;
+    width: 80%;
+    max-height: 250px;
+    margin-bottom: 10%;
+    object-fit: cover;
+    border-radius: 25px;
+    z-index: 2;
+  }
+
+  .expanded-text {
+    color: white;
+    font-size: 90%;
+    max-width: 100%;
+    line-height: 1.5;
+  }
+
+  .expanded-content {
+    width: 100%;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .card {
+    flex-shrink: 1;
+    border-radius: 50px;
+    overflow: hidden;
+    width: 33vw;
+    height: 500px;
+    font-size: 1vw;
+  }
+
+  .card:hover {
+    width: 60vw;
+    flex-shrink: 0;
+  }
+
+  .expanded-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .expanded-image {
+    width: 40%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 25px;
+    z-index: 2;
+  }
+
+  .expanded-text {
+    color: white;
+    flex: 1;
+    margin-left: 20px;
+    font-size: 1.25vw;
+    max-width: 55%; /* Limits the text width to avoid excessive wrapping */
+    min-width: 30%;
+    max-height: 2vh;
+    line-height: 1.5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 80%;
+    animation: enter 0.5s 1;
+    z-index: 0;
+  }
+}
+
+@keyframes enter {
+  0% {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+  /* 5% {
+    transform: translateX(0px);
+  }
+  60%{
+    opacity: 0.3;
+  }
+  70%{
+    opacity: 0.4;
+  }
+  80%{
+    opacity: 0.5 ;
+  }
+  90%{
+    opacity: 0.6;
+  }
+  95%{
+    opacity: 0.7;
+  } */
+  99%{
+    opacity: 0.001;
+  }
+}

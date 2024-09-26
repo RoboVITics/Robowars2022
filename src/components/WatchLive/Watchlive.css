@@ -1,0 +1,34 @@
+.video-container {
+  position: relative;
+  padding-bottom: 40%; /* Adjusts height dynamically based on width */
+  margin-top: 15px;
+  max-width: 100%;
+  background: black;
+  margin-bottom: 100px; /* Background for video container */
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 20;
+  bottom: 30;
+  left: 0;
+  width: 70%; /* Adjusts iframe width */
+  height: 98.3%; /* Ensures iframe maintains full height */
+  margin-left: 180px;
+  margin-top: 18px;
+  border: 2px solid #d64e2e; /* Thin, shadow-like border */
+  box-shadow: 5px 5px 10px #d64e2e; /* Adds depth with box-shadow */
+}
+
+@media (max-width: 768px) {
+  .video-container {
+    width: 100vw; /* Full viewport width */
+    height: 50vh; /* Maintain aspect ratio for mobile */
+  }
+  .video-container iframe {
+    top: 20;
+    bottom: 30;
+    margin-left: 4%;
+    width: 90vw;
+  }
+}
