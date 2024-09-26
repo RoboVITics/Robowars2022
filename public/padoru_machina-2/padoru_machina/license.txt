@@ -1,0 +1,11 @@
+Model Information:
+* title:	Padoru Machina
+* source:	https://sketchfab.com/3d-models/padoru-machina-1edb004ab263457ca568d0d2473fa4ec
+* author:	YSMQTHLQYH (https://sketchfab.com/YSMQTHLQYH)
+
+Model License:
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Padoru Machina" (https://sketchfab.com/3d-models/padoru-machina-1edb004ab263457ca568d0d2473fa4ec) by YSMQTHLQYH (https://sketchfab.com/YSMQTHLQYH) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)

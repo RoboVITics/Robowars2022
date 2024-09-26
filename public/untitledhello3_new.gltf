@@ -1,0 +1,109 @@
+{
+  "asset": {
+    "generator": "Khronos glTF Blender I/O v4.0.44",
+    "version": "2.0"
+  },
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Scene",
+      "nodes": [0]
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "name": "RoboWars",
+      "rotation": [0.7071068286895752, 0, 0, 0.7071068286895752],
+      "scale": [33.132904052734375, 33.132904052734375, 33.132904052734375],
+      "translation": [
+        0.00013729010242968798, -0.04677887633442879, -0.001503155566751957
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "Metal1",
+      "pbrMetallicRoughness": {}
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Curve.004",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0
+        }
+      ]
+    }
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 2794,
+      "max": [0.04930558800697327, 0.008020000532269478, 0.07162319123744965],
+      "min": [
+        -0.049315087497234344, -0.008020000532269478, -0.053398970514535904
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 2794,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 2794,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5123,
+      "count": 13656,
+      "type": "SCALAR"
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 33528,
+      "byteOffset": 0,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 33528,
+      "byteOffset": 33528,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 22352,
+      "byteOffset": 67056,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 27312,
+      "byteOffset": 89408,
+      "target": 34963
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 116720,
+      "uri": "untitledhello3_new.bin"
+    }
+  ]
+}

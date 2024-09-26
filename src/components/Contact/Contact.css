@@ -1,0 +1,509 @@
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  width: 44px;
+  height: 44px;
+  border-radius: 50px;
+  transition: all 0.4s;
+  border: 2px solid #cda45e;
+}
+
+.back-to-top i {
+  font-size: 28px;
+  color: #cda45e;
+  line-height: 0;
+}
+
+.back-to-top:hover {
+  background: #cda45e;
+  color: #1a1814;
+}
+
+.back-to-top:hover i {
+  color: #444444;
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background: #1a1814;
+}
+
+#preloader:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  border: 6px solid #1a1814;
+  border-top-color: #cda45e;
+  border-bottom-color: #cda45e;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: animate-preloader 1s linear infinite;
+}
+
+@keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.contact .php-email-form {
+  width: 100%;
+}
+
+.contact .php-email-form .form-group {
+  padding-bottom: 8px;
+}
+
+.contact .php-email-form .validate {
+  display: none;
+  color: red;
+  margin: 0 0 15px 0;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.contact .php-email-form .error-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .loading {
+  display: none;
+  text-align: center;
+  padding: 15px;
+}
+
+.contact .php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #cda45e;
+  border-top-color: #1a1814;
+  animation: animate-loading 1s linear infinite;
+}
+
+.contact .php-email-form input,
+.contact .php-email-form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+  background: #0c0b09;
+  border-color: #625b4b;
+  color: white;
+}
+
+.contact .php-email-form input::-moz-placeholder,
+.contact .php-email-form textarea::-moz-placeholder {
+  color: #a49b89;
+}
+
+.contact .php-email-form input::placeholder,
+.contact .php-email-form textarea::placeholder {
+  color: #a49b89;
+}
+
+.contact .php-email-form input:focus,
+.contact .php-email-form textarea:focus {
+  border-color: #cda45e;
+}
+
+.contact .php-email-form input {
+  height: 44px;
+}
+
+.contact .php-email-form textarea {
+  padding: 10px 12px;
+}
+
+.contact .php-email-form button[type="submit"] {
+  background: #cda45e;
+  border: 0;
+  padding: 10px 35px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+.contact .php-email-form button[type="submit"]:hover {
+  background: #d3af71;
+}
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.card1 {
+  background: #d64e2e;
+  width: 20rem;
+  height: 29rem;
+  position: relative;
+  border-radius: 30px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+@keyframes spin {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 200% 100%;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.contact_logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.6s ease-in-out;
+}
+
+.contact_logo .logo-svg {
+  fill: white;
+  width: 30px;
+  height: 30px;
+}
+
+.icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+
+.icon .svg {
+  fill: rgba(255, 255, 255, 0.797);
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+  height: fit-content;
+}
+
+.box {
+  position: absolute;
+  padding: 10px;
+  text-align: right;
+  background: rgba(255, 255, 255, 0.389);
+  border-top: 2px solid rgb(255, 255, 255);
+  border-right: 1px solid white;
+  border-radius: 10% 13% 42% 0%/10% 12% 75% 0%;
+  box-shadow: rgba(100, 100, 111, 0.364) -7px 7px 29px 0px;
+  transform-origin: bottom left;
+  transition: all 1s ease-in-out;
+}
+
+.box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.box:hover .svg {
+  fill: white;
+}
+
+.box1 {
+  width: 85%;
+  height: 85%;
+  bottom: -85%;
+  left: -85%;
+}
+
+.box1::before {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #ff53d4 60%,
+    #62c2fe 90%
+  );
+}
+
+.box1:hover::before {
+  opacity: 1;
+}
+
+.box1:hover .icon .svg {
+  filter: drop-shadow(0 0 5px white);
+}
+
+.box2 {
+  width: 70%;
+  height: 70%;
+  bottom: -70%;
+  left: -70%;
+  transition-delay: 0.2s;
+}
+
+.box2::before {
+  background: radial-gradient(circle at 30% 107%, #91e9ff 0%, #00acee 90%);
+}
+
+.box2:hover::before {
+  opacity: 1;
+}
+
+.box2:hover .icon .svg {
+  filter: drop-shadow(0 0 5px white);
+}
+
+.box3 {
+  width: 50%;
+  height: 50%;
+  bottom: -50%;
+  left: -50%;
+  transition-delay: 0.4s;
+}
+
+.box3::before {
+  background: radial-gradient(circle at 30% 107%, #969fff 0%, #b349ff 90%);
+}
+
+.box3:hover::before {
+  opacity: 1;
+}
+
+.box3:hover .icon .svg {
+  filter: drop-shadow(0 0 5px white);
+}
+
+.box4 {
+  width: 30%;
+  height: 30%;
+  bottom: -30%;
+  left: -50%;
+  transition-delay: 0.6s;
+}
+.box4::before {
+  background: radial-gradient(circle at 30% 107%, #91e9ff 0%, #00acee 90%);
+}
+
+.box4:hover::before {
+  opacity: 1;
+}
+
+.box4:hover .icon .svg {
+  filter: drop-shadow(0 0 5px white);
+}
+
+.card1:hover {
+  transform: scale(1.1);
+}
+
+.card1:hover .box {
+  bottom: -1px;
+  left: -1px;
+}
+
+.card1:hover .contact_logo {
+  transform: translate(0, 0);
+  top: 20px;
+  left: 20px;
+}
+
+.containerOfFooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.temp {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-box {
+  max-width: 30vw;
+  margin-left: -40px;
+}
+.war-logo {
+  margin-left: 45px;
+  margin-right: 45px;
+  height: 30rem;
+}
+
+@media only screen and (max-width: 1188px) {
+  .containerOfFooter {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .containerOfFooter img {
+    height: 30rem;
+    position: relative;
+    top: 2rem;
+    left: 2rem;
+    visibility: visible;
+  }
+
+  .contact-box {
+    max-width: 100vw;
+    margin-left: 0;
+  }
+
+  .war-logo {
+    margin-left: 0;
+  }
+
+  .card1 {
+    width: 100%;
+    border-radius: 20px;
+    width: 20rem;
+    height: 29rem;
+    left: 12rem;
+    position: relative;
+    top: 2rem;
+    margin-top: 2rem;
+  }
+
+  .contact_logo {
+    position: absolute;
+    top: 50;
+    left: 8rem;
+    height: 33rem;
+    width: 16rem;
+    transform: translate(-50%, -50%);
+    transition: all 0.6s ease-in-out;
+  }
+  .card1:hover {
+    transform: scale(1.1);
+  }
+
+  .card1:hover .box {
+    bottom: -1px;
+    left: -1px;
+  }
+
+  .card1:hover .contact_logo {
+    transform: translate(0, 0);
+    top: 0;
+    left: 0;
+  }
+
+  .back-to-top {
+    right: 10px;
+    bottom: 10px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .back-to-top i {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .containerOfFooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-box {
+    max-width: 100vw;
+    margin-left: 0;
+  }
+
+  .back-to-top {
+    right: 8px;
+    bottom: 8px;
+    width: 36px;
+    height: 36px;
+  }
+
+  .back-to-top i {
+    font-size: 20px;
+  }
+
+  .card1 {
+    width: 100%;
+    border-radius: 20px;
+    width: 20rem;
+    height: 29rem;
+    left: 0rem;
+    position: relative;
+    top: 2rem;
+    margin-top: 2rem;
+  }
+
+  .contact_logo {
+    position: absolute;
+    top: 50;
+    left: 8rem;
+    height: 33rem;
+    width: 16rem;
+    transform: translate(-50%, -50%);
+    transition: all 0.6s ease-in-out;
+  }
+  .card1:hover {
+    transform: scale(1.05);
+  }
+
+  .card1:hover .box {
+    bottom: -1px;
+    left: -1px;
+  }
+
+  .card1:hover .contact_logo {
+    transform: translate(0, 0);
+    top: 0;
+    left: 0;
+  }
+
+  .war-logo {
+    margin-left: 0;
+  }
+
+  .temp {
+    flex-direction: column;
+    align-items: center;
+  }
+}

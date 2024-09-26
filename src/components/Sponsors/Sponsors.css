@@ -1,0 +1,22 @@
+.sponsors-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100px;
+}
+.sponsor-image {
+  width: 500px;
+}
+@media (max-width: 600px) {
+  .sponsersText {
+    margin-top: 90px;
+  }
+  .sponsor-image {
+    margin-top: 30px;
+    width: 300px;
+  }
+  .sponsors-section {
+    margin-bottom: 90px;
+  }
+}

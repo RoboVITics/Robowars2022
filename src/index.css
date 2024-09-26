@@ -1,0 +1,195 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
+@font-face {
+  font-family: "Sd Robotics";
+  src: url("/public/robtronika-font/Robtronika-3lZyy.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #d9ba85;
+  text-decoration: none;
+}
+
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.row {
+  --bs-gutter-x: 1.5rem;
+  /* --bs-gutter-y: 0; */
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  /* margin-top: calc(-1 * var(--bs-gutter-y)); */
+  /* margin-right: calc(-.5 * var(--bs-gutter-x)); */
+  /* margin-left: calc(-.5 * var(--bs-gutter-x)); */
+  margin-top: 4rem;
+  gap: 24px;
+}
+
+.aboutUs,
+.aboutgravitas,
+.media,
+.faq,
+.contactus {
+  display: flex;
+  align-items: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  flex-direction: column;
+  gap: 2rem;
+}
+.featurette-heading {
+  font-family: "Sd Robotics", serif;
+}
+.aboutUsText,
+.aboutgravitasText,
+.mediaText,
+.faqText,
+.sponsersText,
+.contactUsText {
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 0.25em;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 15%;
+  font-family: "Sd Robotics", serif;
+}
+
+.fst-italic {
+  font-style: italic !important;
+  font-size: 22px;
+  word-spacing: 8px;
+}
+
+.container-fluid {
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  /* gap: 23px;*/
+}
+
+.img-fluid {
+  /* max-width: 100%; */
+  /* height: auto; */
+  /* height: 1000px; */
+  width: 18rem;
+  height: 200px;
+}
+
+#playButton {
+  position: relative;
+  /* padding: 10px 20px; */
+  border-radius: 50%;
+  border: 1px solid #717d8f;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background: #717d8f;
+  color: #fff;
+  overflow: hidden;
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  width: 90px !important;
+  height: 90px !important;
+}
+
+#playButton:hover {
+  background: rgb(41 241 208);
+  box-shadow: 0 0 30px 5px rgba(0, 126, 161, 0);
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+#playButton:hover::before {
+  -webkit-animation: sh02 0.5s 0s linear;
+  -moz-animation: sh02 0.5s 0s linear;
+  animation: sh02 0.5s 0s linear;
+}
+
+#playButton::before {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 86%;
+  position: absolute;
+  top: 7%;
+  left: 0%;
+  opacity: 0;
+  background: #fff;
+  box-shadow: 0 0 50px 30px #fff;
+  -webkit-transform: skewX(-20deg);
+  -moz-transform: skewX(-20deg);
+  -ms-transform: skewX(-20deg);
+  -o-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+}
+
+@keyframes sh02 {
+  from {
+    opacity: 0;
+    left: 0%;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}
+
+#playButton:active {
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: box-shadow 0.2s ease-in;
+  -moz-transition: box-shadow 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in;
+}
+
+@media only screen and (max-width: 768px) {
+  .aboutUsText,
+  .aboutgravitasText,
+  .mediaText,
+  .faqText,
+  .sponsersText,
+  .contactUsText {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+}
