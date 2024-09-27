@@ -1,7 +1,7 @@
 import { motion, useAnimation } from "framer-motion";
 import React, { useEffect, useRef } from "react";
 import "./Loadingpage.css";
-import image from "../../assets/robowars_logo.gif"; // Import the image
+import image from "../../assets/war logo.gif"; // Import the image
 
 const Progressbar = ({ value }) => {
   // No need to pass `image` as a prop

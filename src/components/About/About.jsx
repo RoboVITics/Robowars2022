@@ -1,11 +1,8 @@
 import { useEffect, useState, useRef } from "react";
 import "./About.css";
-import logo from "../../assets/Log.png";
+import logo from "../../assets/robovitics logo.png";
 import AboutImage from "../../assets/AboutImage.jpg";
-import team from "../../assets/robovitics_team.png";
-import gravitas_vit from "../../assets/gravitas_vitjpeg.jpeg";
 import GravLogo from "../../assets/newgravlogo.svg";
-import warLogo from "../../assets/ROBOWARSmainLOGO.png";
 
 export default function AboutUs() {
   const [hoveredCard, setHoveredCard] = useState(null);
@@ -104,7 +101,7 @@ export default function AboutUs() {
               "first",
               logo,
               <div className="expanded-content">
-                <img src={team} alt="About" className="expanded-image" />
+                <img src="https://asset.cloudinary.com/dtuqpup4a/3bf6a2425548bd4052a3185c1693a033" alt="About" className="expanded-image" />
                 {window.innerWidth < 600 ? (
                   <p className="expanded-text">
                     RoboVITics, the official robotics club of VIT Vellore,
@@ -138,7 +135,7 @@ export default function AboutUs() {
           >
             {getCardContent(
               "second",
-              warLogo,
+              "https://asset.cloudinary.com/dtuqpup4a/16d5ef648e3f93ffce6fa9c0bd1552a5",
               <div className="expanded-content">
                 <img src={AboutImage} alt="About" className="expanded-image" />
                 {window.innerWidth < 600 ? (
@@ -175,7 +172,7 @@ export default function AboutUs() {
               GravLogo,
               <div className="expanded-content">
                 <img
-                  src={gravitas_vit}
+                  src="https://asset.cloudinary.com/dtuqpup4a/35f806618d2c59d03d088b97cf917ffa"
                   alt="About"
                   className="expanded-image"
                 />
