@@ -2,7 +2,7 @@ import React, { useRef, useState, useEffect } from "react";
 import { motion, useInView, useAnimation } from "framer-motion";
 import "./Gallery.css";
 
-const images = ["https://asset.cloudinary.com/dtuqpup4a/12bfdcadb221698be12854be1c131f9c", "https://asset.cloudinary.com/dtuqpup4a/1e5357b55c6a50948deef7458940582d", "https://asset.cloudinary.com/dtuqpup4a/dbd494b4c19e1308d8b0073d119a7388", "https://asset.cloudinary.com/dtuqpup4a/3802430d23c7beaa09f07083ea9ed4bf", "https://asset.cloudinary.com/dtuqpup4a/1e5357b55c6a50948deef7458940582d"];
+const images = ["https://res.cloudinary.com/dtuqpup4a/image/upload/fl_preserve_transparency/v1727411412/img1_vxxuqd.jpg?_s=public-apps", "https://res.cloudinary.com/dtuqpup4a/image/upload/fl_preserve_transparency/v1727411415/img4_cjreoa.jpg?_s=public-apps", "https://res.cloudinary.com/dtuqpup4a/image/upload/fl_preserve_transparency/v1727411419/img3_zxgemk.jpg?_s=public-apps", "https://res.cloudinary.com/dtuqpup4a/image/upload/fl_preserve_transparency/v1727411415/img4_cjreoa.jpg?_s=public-apps", "https://res.cloudinary.com/dtuqpup4a/image/upload/fl_preserve_transparency/v1727411415/img4_cjreoa.jpg?_s=public-apps"];
 
 const Gallery = () => {
   const [positions, setPositions] = useState([0, 1, 2, 3, 4]);
