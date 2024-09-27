@@ -159,7 +159,7 @@ const Tournament15 = () => {
       <table className="tournament-table">
         <thead>
           <tr>
-            <th>Team Name & Icon</th>
+            <th>Team Name</th>
             <th onClick={() => handleSort('wins')} style={{ cursor: 'pointer' }}>
               Wins {sortOrder.column === 'wins' ? (sortOrder.order === 'asc' ? '▲' : '▼') : ''}
             </th>
@@ -175,7 +175,6 @@ const Tournament15 = () => {
             <tr key={team.team_id}>
               <td>
                 <div className="team-info">
-                  <img src={team.team_icon} alt={team.team_name} style={{ width: '50px', marginRight: '8px' }} />
                   {team.team_name}
                 </div>
               </td>
