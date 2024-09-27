@@ -162,6 +162,7 @@ hr {
 .team-info {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .small-icon {
