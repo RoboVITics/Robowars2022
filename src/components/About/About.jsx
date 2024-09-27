@@ -101,7 +101,7 @@ export default function AboutUs() {
               "first",
               logo,
               <div className="expanded-content">
-                <img src="https://asset.cloudinary.com/dtuqpup4a/3bf6a2425548bd4052a3185c1693a033" alt="About" className="expanded-image" />
+                <img src="https://res.cloudinary.com/dtuqpup4a/image/upload/fl_preserve_transparency/v1727411417/robovitics_team_hee1en.jpg?_s=public-apps" alt="About" className="expanded-image" />
                 {window.innerWidth < 600 ? (
                   <p className="expanded-text">
                     RoboVITics, the official robotics club of VIT Vellore,
@@ -135,7 +135,7 @@ export default function AboutUs() {
           >
             {getCardContent(
               "second",
-              "https://asset.cloudinary.com/dtuqpup4a/16d5ef648e3f93ffce6fa9c0bd1552a5",
+              "https://res.cloudinary.com/dtuqpup4a/image/upload/fl_preserve_transparency/v1727411426/ROBOWARSmainLOGO_nerwxl.jpg?_s=public-apps",
               <div className="expanded-content">
                 <img src={AboutImage} alt="About" className="expanded-image" />
                 {window.innerWidth < 600 ? (
@@ -172,7 +172,7 @@ export default function AboutUs() {
               GravLogo,
               <div className="expanded-content">
                 <img
-                  src="https://asset.cloudinary.com/dtuqpup4a/35f806618d2c59d03d088b97cf917ffa"
+                  src="https://res.cloudinary.com/dtuqpup4a/image/upload/fl_preserve_transparency/v1727411408/gravitas_vitjpeg_im9ljt.jpg?_s=public-apps"
                   alt="About"
                   className="expanded-image"
                 />
