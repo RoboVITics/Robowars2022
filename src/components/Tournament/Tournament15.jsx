@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { supabase } from '../../supabase'; 
 import './TournamentDet.css'; 
 
-const Tournament15 = () => {
+const Tournament8 = () => {
   const [teams, setTeams] = useState([]);
   const [upcomingMatches, setUpcomingMatches] = useState([]);
   const [sortOrder, setSortOrder] = useState({ column: 'losses', order: 'asc' }); 
@@ -47,7 +47,7 @@ const Tournament15 = () => {
 
     const fetchUpcomingMatches = async () => {
       const { data: matches, error } = await supabase
-          .from('match_8')
+          .from('match_15')
           .select('*')
           .gt('time', new Date().toISOString())
           .order('time', { ascending: true })
@@ -58,14 +58,14 @@ const Tournament15 = () => {
           return;
       }
   
-      const { data: teamsData, error: teamError } = await supabase.from('teams').select('team_id, team_icon');
+      const { data: teamsData, error: teamError } = await supabase.from('teams').select('team_id, team_name');
       if (teamError) {
           console.error('Error fetching team icons:', teamError);
           return;
       }
   
       const teamIconsMap = teamsData.reduce((acc, team) => {
-          acc[team.team_id] = team.team_icon;
+          acc[team.team_id] = team.team_name;
           return acc;
       }, {});
   
@@ -128,13 +128,13 @@ const Tournament15 = () => {
             </div>
             <hr />
             <div className="match-content">
-              <img src={match.team_1_icon} alt="Team 1" className="team-icon small-icon" />
+              <p className='team_name' style={{color:'#f44336'}}>{match.team_1_icon}</p>
               <span className="vs-text">V/S</span>
-              <img src={match.team_2_icon} alt="Team 2" className="team-icon small-icon" />
+              <p className='team_name' style={{color:'#f44336'}}>{match.team_2_icon}</p>
             </div>
             <div className="score-section">
-              <span className="large-score">{match.score_1}</span>
-              <span className="large-score">{match.score_2}</span>
+              <span className="large-score">{match.score_1 || "TBD"}</span>
+              <span className="large-score">{match.score_2 || "TBD"}</span>
             </div>
           </div>
         ))}
@@ -193,4 +193,4 @@ const Tournament15 = () => {
   );
 };
 
-export default Tournament15;
+export default Tournament8;
