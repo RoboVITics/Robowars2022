@@ -1,13 +1,8 @@
 import React, { useRef, useState, useEffect } from "react";
 import { motion, useInView, useAnimation } from "framer-motion";
 import "./Gallery.css";
-import pub4 from "../../assets/img4.png";
-import pub5 from "../../assets/img5.png";
-import pub3 from "../../assets/img3.png";
-import pub2 from "../../assets/img2.png";
-import pub1 from "../../assets/img1.png";
 
-const images = [pub1, pub2, pub3, pub4, pub5];
+const images = ["https://asset.cloudinary.com/dtuqpup4a/12bfdcadb221698be12854be1c131f9c", "https://asset.cloudinary.com/dtuqpup4a/1e5357b55c6a50948deef7458940582d", "https://asset.cloudinary.com/dtuqpup4a/dbd494b4c19e1308d8b0073d119a7388", "https://asset.cloudinary.com/dtuqpup4a/3802430d23c7beaa09f07083ea9ed4bf", "https://asset.cloudinary.com/dtuqpup4a/1e5357b55c6a50948deef7458940582d"];
 
 const Gallery = () => {
   const [positions, setPositions] = useState([0, 1, 2, 3, 4]);
