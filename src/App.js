@@ -13,6 +13,7 @@ import { useAnimation } from "framer-motion";
 import { useEffect, useState } from "react";
 import CursorTrail from "./components/Cursoranimation/Cursoranimation";
 import Watchlive from "./components/WatchLive/Watchlive";
+import Fixture from "./components/Fixture/Fixture";
 
 function App() {
   const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth >= 1000);
@@ -75,6 +76,14 @@ function App() {
             element={
               <div>
                 <Tournament />
+              </div>
+            }
+          />
+          <Route
+            path="/fixture"
+            element={
+              <div>
+                <Fixture />
               </div>
             }
           />
