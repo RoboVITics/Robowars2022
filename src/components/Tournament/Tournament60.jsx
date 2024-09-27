@@ -2,85 +2,94 @@ import React, { useEffect, useState } from 'react';
 import { supabase } from '../../supabase'; 
 import './TournamentDet.css'; 
 
-const Tournament8 = () => {
+const Tournament60 = () => {
   const [teams, setTeams] = useState([]);
   const [upcomingMatches, setUpcomingMatches] = useState([]);
   const [sortOrder, setSortOrder] = useState({ column: 'losses', order: 'asc' }); 
   const [searchTerm, setSearchTerm] = useState('');
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchTeams = async () => {
-      const { data: matchData, error: matchError } = await supabase.from('match_60').select('*');
-      const { data: teamData, error: teamError } = await supabase.from('teams').select('*');
+      setLoading(true);
+      try {
+        const { data: matchData, error: matchError } = await supabase.from('match_60').select('*');
+        const { data: teamData, error: teamError } = await supabase.from('teams').select('*');
 
-      if (matchError || teamError) {
-        console.error('Error fetching data:', matchError || teamError);
-        return;
+        if (matchError || teamError) {
+          console.error('Error fetching data:', matchError || teamError);
+          return;
+        }
+
+        const teamStats = matchData.reduce((acc, match) => {
+          if (match.score_1 < match.score_2) {
+            acc[match.team_1] = acc[match.team_1] || { wins: 0, losses: 0 };
+            acc[match.team_1].losses += 1;
+            
+            acc[match.team_2] = acc[match.team_2] || { wins: 0, losses: 0 };
+            acc[match.team_2].wins += 1;
+          } else if (match.score_2 < match.score_1) {
+            acc[match.team_2] = acc[match.team_2] || { wins: 0, losses: 0 };
+            acc[match.team_2].losses += 1;
+            
+            acc[match.team_1] = acc[match.team_1] || { wins: 0, losses: 0 };
+            acc[match.team_1].wins += 1;
+          }
+          return acc;
+        }, {});
+
+        const teamsWithStatus = teamData.map(team => ({
+          ...team,
+          wins: teamStats[team.team_id]?.wins || 0,
+          losses: teamStats[team.team_id]?.losses || 0,
+          status: (teamStats[team.team_id]?.losses || 0) > 2 ? 'Eliminated' : 'Active',
+        }));
+
+        setTeams(teamsWithStatus);
+      } catch (error) {
+        console.error('Error fetching teams:', error);
       }
 
-      const teamStats = matchData.reduce((acc, match) => {
-        if (match.score_1 < match.score_2) {
-          acc[match.team_1] = acc[match.team_1] || { wins: 0, losses: 0 };
-          acc[match.team_1].losses += 1;
-          
-          acc[match.team_2] = acc[match.team_2] || { wins: 0, losses: 0 };
-          acc[match.team_2].wins += 1;
-        } else if (match.score_2 < match.score_1) {
-          acc[match.team_2] = acc[match.team_2] || { wins: 0, losses: 0 };
-          acc[match.team_2].losses += 1;
-          
-          acc[match.team_1] = acc[match.team_1] || { wins: 0, losses: 0 };
-          acc[match.team_1].wins += 1;
+      try {
+        const { data: matches, error } = await supabase
+            .from('match_60')
+            .select('*')
+            .gt('time', new Date().toISOString())
+            .order('time', { ascending: true })
+            .limit(5);
+    
+        if (error) {
+            console.error('Error fetching upcoming matches:', error);
+            return;
         }
-        return acc;
-      }, {});
+    
+        const { data: teamsData, error: teamError } = await supabase.from('teams').select('team_id, team_name');
+        if (teamError) {
+            console.error('Error fetching team icons:', teamError);
+            return;
+        }
+    
+        const teamIconsMap = teamsData.reduce((acc, team) => {
+            acc[team.team_id] = team.team_name;
+            return acc;
+        }, {});
+    
+        const matchesWithIcons = matches.map(match => ({
+            ...match,
+            team_1_icon: teamIconsMap[match.team_1],
+            team_2_icon: teamIconsMap[match.team_2],
+            caption: match.winner_bracket ? 'Winner Bracket' : 'Elimination',
+        }));
+    
+        setUpcomingMatches(matchesWithIcons);
+      } catch (error) {
+        console.error('Error fetching upcoming matches:', error);
+      }
 
-      const teamsWithStatus = teamData.map(team => ({
-        ...team,
-        wins: teamStats[team.team_id]?.wins || 0,
-        losses: teamStats[team.team_id]?.losses || 0,
-        status: (teamStats[team.team_id]?.losses || 0) > 2 ? 'Eliminated' : 'Active',
-      }));
-
-      setTeams(teamsWithStatus);
+      setLoading(false);
     };
 
-    const fetchUpcomingMatches = async () => {
-      const { data: matches, error } = await supabase
-          .from('match_60')
-          .select('*')
-          .gt('time', new Date().toISOString())
-          .order('time', { ascending: true })
-          .limit(5);
-  
-      if (error) {
-          console.error('Error fetching upcoming matches:', error);
-          return;
-      }
-  
-      const { data: teamsData, error: teamError } = await supabase.from('teams').select('team_id, team_name');
-      if (teamError) {
-          console.error('Error fetching team icons:', teamError);
-          return;
-      }
-  
-      const teamIconsMap = teamsData.reduce((acc, team) => {
-          acc[team.team_id] = team.team_name;
-          return acc;
-      }, {});
-  
-      const matchesWithIcons = matches.map(match => ({
-          ...match,
-          team_1_icon: teamIconsMap[match.team_1],
-          team_2_icon: teamIconsMap[match.team_2],
-          caption: match.winner_bracket ? 'Winner Bracket' : 'Elimination',
-      }));
-  
-      setUpcomingMatches(matchesWithIcons);
-  };
-  
     fetchTeams();
-    fetchUpcomingMatches();
   }, []);
 
   const handleSort = (column) => {
@@ -142,6 +151,16 @@ const Tournament8 = () => {
     );
   };
 
+  if (loading) {
+    return (
+      <div className="d-flex justify-content-center" style={{ marginTop: "20%" }}>
+        <div className="spinner-border" role="status">
+          <span className="visually-hidden">Loading...</span>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="tournament-container">
       <h1 className="tournament-title">Team Details</h1>
@@ -193,4 +212,4 @@ const Tournament8 = () => {
   );
 };
 
-export default Tournament8;
+export default Tournament60;

@@ -1,16 +1,15 @@
 import React, { useState, useEffect } from "react";
-import "./Tournament.css";
 import { createClient } from "@supabase/supabase-js";
-import Tournament8 from "./Tournament8";
-import Tournament15 from "./Tournament15";
-import Tournament60 from "./Tournament60";
+import Fixture8 from "./Fixture8";
+import Fixture15 from "./Fixture15";
+import Fixture60 from "./Fixture60";
 import { useNavigate } from "react-router-dom";
 
 const supabaseUrl = process.env.REACT_APP_SUPABASE_URL;
 const supabaseKey = process.env.REACT_APP_SUPABASE_KEY;
 const supabase = createClient(supabaseUrl, supabaseKey);
 
-const Tournament = () => {
+const Fixture = () => {
   const [activeButton, setActiveButton] = useState("8KG");
   const [data, setData] = useState({
     match_8: [],
@@ -85,20 +84,28 @@ const Tournament = () => {
         </button>
       </nav>
 
-      {activeButton === "8KG" && <Tournament8 />}
-      {activeButton === "15KG" && <Tournament15 data={data.match_15} />}
-      {activeButton === "60KG" && <Tournament60 data={data.match_60} />}
+      {activeButton === "8KG" && <Fixture8 data={data.match_8}/>}
+      {activeButton === "15KG" && <Fixture15 data={data.match_15} />}
+      {activeButton === "60KG" && <Fixture60 data={data.match_60} />}
       <button
         className="home-btn"
+        onClick={() => {
+          navigate("/tournament");
+        }}
+      >
+        Go Table
+      </button>
+      <button
+        className="home-btn"
+        style={{left: "-40%"}}
         onClick={() => {
           navigate("/");
         }}
       >
         Go Home
       </button>
-      
     </>
   );
 };
 
-export default Tournament;
+export default Fixture;

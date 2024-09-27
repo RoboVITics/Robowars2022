@@ -19,7 +19,7 @@ const HeroSection = () => {
   }
 
   const handleMatchesClick = () => {
-    navigate("/tournament");
+    navigate("/fixture");
   };
 
   useEffect(() => {
