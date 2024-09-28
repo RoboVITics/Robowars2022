@@ -109,8 +109,8 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className="nav-item text-link">
-                <Link to="#categories" className="link no-wrap">
-                  Categories
+                <Link to="/fixture" className="link no-wrap">
+                  Matches
                 </Link>
               </li>
               <li className="nav-item text-link">
