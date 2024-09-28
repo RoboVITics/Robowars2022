@@ -17,9 +17,9 @@ const Fixture8 = ({ data }) => {
         </div>
       ) : (
         <>
-          <div className="tournament-container">
+          <div className="tournament-container" style={{overflow:"scroll"}}>
             <h1 className="tournament-title">Fixture</h1>
-            <table className="tournament-table">
+            <table className="tournament-table" style={{overflow:"scroll"}}>
               <thead>
                 <tr>
                   <th>Match No.</th>

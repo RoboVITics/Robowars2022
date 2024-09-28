@@ -166,7 +166,7 @@ const Tournament15 = () => {
 
   return (
     <>
-    <div className="tournament-container">
+    <div className="tournament-container"  style={{overflow:"scroll"}}>
       <h1 className="tournament-title">Team Details</h1>
 
       <div className="search-container">
@@ -179,7 +179,7 @@ const Tournament15 = () => {
         />
       </div>
 
-      <table className="tournament-table">
+      <table className="tournament-table"  style={{overflow:"scroll"}}>
         <thead>
           <tr>
             <th>Team Name</th>
