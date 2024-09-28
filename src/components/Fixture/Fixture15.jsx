@@ -40,7 +40,7 @@ const Fixture15 = ({ data }) => {
                       {match.team2.team_name} {match.bot_2 && <span>- {match.bot_2}</span>}
                     </td>
                     <td>{match.status ? 'Completed' : 'Pending'}</td>
-                    <td>{(!match.status ? "TBD" : (match.winner === match.team1 ? match.team1.team_name : match.team2.team_name))}</td>
+                    <td>{(!match.status ? "TBD" : (match.winner === match.team1.team_id ? match.team1.team_name : match.team2.team_name))}</td>
                   </tr>
                 ))}
               </tbody>
