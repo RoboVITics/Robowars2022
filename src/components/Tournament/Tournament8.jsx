@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { supabase } from '../../supabase'; 
 import './TournamentDet.css'; 
+import { useNavigate } from 'react-router-dom';
 
 const Tournament8 = () => {
   const [teams, setTeams] = useState([]);
@@ -8,6 +9,7 @@ const Tournament8 = () => {
   const [sortOrder, setSortOrder] = useState({ column: 'losses', order: 'asc' }); 
   const [searchTerm, setSearchTerm] = useState('');
   const [loading, setLoading] = useState(true);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const fetchTeams = async () => {
@@ -54,8 +56,8 @@ const Tournament8 = () => {
         const { data: matches, error } = await supabase
             .from('match_8')
             .select('*')
-            .gt('time', new Date().toISOString())
-            .order('time', { ascending: true })
+            .eq('status', false)
+            .order('stage_id', { ascending: true })
             .limit(5);
     
         if (error) {
@@ -162,6 +164,7 @@ const Tournament8 = () => {
   }
 
   return (
+    <>
     <div className="tournament-container">
       <h1 className="tournament-title">Team Details</h1>
 
@@ -209,6 +212,16 @@ const Tournament8 = () => {
       <h2 className="upcoming-title">Upcoming Matches</h2>
       {renderUpcomingMatches()}
     </div>
+    <button
+    className="home-btn"
+    style={{marginLeft:"50%"}}
+    onClick={() => {
+      navigate("/");
+    }}
+  >
+    Go Home
+  </button>
+  </>
   );
 };
 

@@ -594,17 +594,18 @@ h2 {
     border-radius: 1.5em;
   }
 }
+.btn-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30%;
+}
 .home-btn {
-  position: fixed;
-  top: 85%; /* Adjust the value to your preference */
-  left: 40%; /* Adjust the value to your preference */
-  z-index: 1000;
   border-radius: 10px;
   min-height: 40px;
   background-color: #d64e2e;
   transition: all 0.3s ease-in-out;
   min-width: 100px;
-  margin-left: 48%;
   margin-top: 1%;
   margin-bottom: 2%;
 }

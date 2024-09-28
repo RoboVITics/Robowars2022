@@ -87,23 +87,7 @@ const Fixture = () => {
       {activeButton === "8KG" && <Fixture8 data={data.match_8}/>}
       {activeButton === "15KG" && <Fixture15 data={data.match_15} />}
       {activeButton === "60KG" && <Fixture60 data={data.match_60} />}
-      <button
-        className="home-btn"
-        onClick={() => {
-          navigate("/tournament");
-        }}
-      >
-        Go Table
-      </button>
-      <button
-        className="home-btn"
-        style={{left: "-40%"}}
-        onClick={() => {
-          navigate("/");
-        }}
-      >
-        Go Home
-      </button>
+    
     </>
   );
 };
