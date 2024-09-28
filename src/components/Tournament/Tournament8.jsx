@@ -24,21 +24,22 @@ const Tournament8 = () => {
         }
 
         const teamStats = matchData.reduce((acc, match) => {
-          if (match.score_1 < match.score_2) {
-            acc[match.team_1] = acc[match.team_1] || { wins: 0, losses: 0 };
-            acc[match.team_1].losses += 1;
-            
-            acc[match.team_2] = acc[match.team_2] || { wins: 0, losses: 0 };
-            acc[match.team_2].wins += 1;
-          } else if (match.score_2 < match.score_1) {
-            acc[match.team_2] = acc[match.team_2] || { wins: 0, losses: 0 };
-            acc[match.team_2].losses += 1;
-            
+          if (match.winner === match.team_1) {
             acc[match.team_1] = acc[match.team_1] || { wins: 0, losses: 0 };
             acc[match.team_1].wins += 1;
+        
+            acc[match.team_2] = acc[match.team_2] || { wins: 0, losses: 0 };
+            acc[match.team_2].losses += 1;
+          } else if (match.winner === match.team_2) {
+            acc[match.team_2] = acc[match.team_2] || { wins: 0, losses: 0 };
+            acc[match.team_2].wins += 1;
+        
+            acc[match.team_1] = acc[match.team_1] || { wins: 0, losses: 0 };
+            acc[match.team_1].losses += 1;
           }
           return acc;
         }, {});
+        
 
         const teamsWithStatus = teamData.map(team => ({
           ...team,
@@ -143,10 +144,10 @@ const Tournament8 = () => {
               <span className="vs-text">V/S</span>
               <p className='team_name' style={{color:'#f44336'}}>{match.team_2_icon}</p>
             </div>
-            <div className="score-section">
+            {/* <div className="score-section">
               <span className="large-score">{match.score_1 || "TBD"}</span>
               <span className="large-score">{match.score_2 || "TBD"}</span>
-            </div>
+            </div> */}
           </div>
         ))}
       </div>
@@ -189,7 +190,7 @@ const Tournament8 = () => {
               Losses {sortOrder.column === 'losses' ? (sortOrder.order === 'asc' ? '▲' : '▼') : ''}
             </th>
             <th>Status</th>
-            <th>Bracket</th>
+            {/* <th>Bracket</th> */}
           </tr>
         </thead>
         <tbody>
@@ -203,7 +204,7 @@ const Tournament8 = () => {
               <td>{team.wins}</td>
               <td>{team.losses}</td>
               <td>{renderStatusChip(team.status)}</td>
-              <td>{team.status === 'Active' ? 'Winner Bracket' : 'Elimination'}</td>
+              {/* <td>{team.status === 'Active' ? 'Winner Bracket' : 'Elimination'}</td> */}
             </tr>
           ))}
         </tbody>

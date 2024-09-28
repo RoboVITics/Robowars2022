@@ -77,7 +77,7 @@ const Card = ({ number, data }) => {
 
           <tbody className="tournament-bracket__content">
             <tr className="tournament-bracket__team tournament-bracket__team--winner">
-              <td className="tournament-bracket__country">
+              {/* <td className="tournament-bracket__country">
                 <abbr className="tournament-bracket__code" title="Team 1">
                   {matchData.score_1 ? matchData.score_1 : "TBD"}
                 </abbr>
@@ -85,7 +85,7 @@ const Card = ({ number, data }) => {
                   className="tournament-bracket__flag flag-icon flag-icon-ca"
                   aria-label="Flag"
                 ></span>
-              </td>
+              </td> */}
               <td className="tournament-bracket__score">
                 <span className="tournament-bracket__number">
                   <img src={matchData.team1.team_icon} alt="Team 1" />
@@ -98,7 +98,7 @@ const Card = ({ number, data }) => {
               </p>
             ) : null}
             <tr className="tournament-bracket__team">
-              <td className="tournament-bracket__country">
+              {/* <td className="tournament-bracket__country">
                 <abbr className="tournament-bracket__code" title="Team 2">
                   {matchData.score_2 ? matchData.score_2 : "TBD"}
                 </abbr>
@@ -106,7 +106,7 @@ const Card = ({ number, data }) => {
                   className="tournament-bracket__flag flag-icon flag-icon-kz"
                   aria-label="Flag"
                 ></span>
-              </td>
+              </td> */}
               <td className="tournament-bracket__score">
                 <span className="tournament-bracket__number">
                   <img src={matchData.team2.team_icon} alt="Team 2" />
