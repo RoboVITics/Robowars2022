@@ -166,7 +166,7 @@ const Tournament60 = () => {
 
   return (
     <>
-    <div className="tournament-container">
+    <div className="tournament-container"  style={{overflow:"scroll"}}>
       <h1 className="tournament-title">Team Details</h1>
 
       <div className="search-container">
