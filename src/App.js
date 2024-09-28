@@ -5,7 +5,7 @@ import HeroSection from "./components/HeroSection/HeroSection";
 import Navbar from "./components/Navbar/Navbar";
 import Gallery from "./components/Gallery/Gallery";
 import Sponsors from "./components/Sponsors/Sponsors";
-import Categories from "./components/Categories/Categories";
+// import Categories from "./components/Categories/Categories";
 import { Route, Routes } from "react-router-dom";
 import Tournament from "./components/Tournament/Tournament";
 import Loadingpage from "./components/Loadingpage/Loadingpage";
@@ -62,7 +62,7 @@ function App() {
                   <Navbar />
                   <HeroSection />
                   <About />
-                  <Categories />
+                  {/*<Categories />*/}
                   <Gallery />
                   <FAQ />
                   <Sponsors />
