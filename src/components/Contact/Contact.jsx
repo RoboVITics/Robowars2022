@@ -4,16 +4,16 @@ import "./Contact.css";
 
 const CONTACTS = [
   {
-    name: "Yash Pathak",
+    name: "Shuktika Mallaya",
     role: "Chairperson",
-    phone: "+91 96919 33181",
-    tel: "tel:+919691933181",
+    phone: "+91 93091 68579",
+    tel: "tel:+919309168579",
   },
   {
-    name: "Ayan Gattani",
+    name: "Krrish Agrawal",
     role: "Secretary",
-    phone: "+91 83699 79901",
-    tel: "tel:+918369979901",
+    phone: "+91 98188 48838",
+    tel: "tel:+919818848838",
   },
 ];
 
